@@ -1,92 +1,67 @@
+# 💔 AI Breakup Recovery Agent (Day 02) 💡
 
-# 💔 Breakup Recovery Agent Team
+## Problem Section 💡
 
-This is an AI-powered application designed to help users emotionally recover from breakups by providing support, guidance, and emotional outlet messages from a team of specialized AI agents. The app is built using **Streamlit** and **Agno**, leveraging **Gemini 2.0 Flash (Google Vision Model)   **.
+Breakups can be emotionally challenging, leaving individuals struggling to process their feelings and find closure. Many lack immediate access to support or constructive guidance, resulting in prolonged emotional distress. An AI-powered solution can provide personalized, timely assistance to help users navigate post-breakup emotions effectively.
 
-## 🚀 Features
+## Solution Section 🚀
 
-- 🧠 **Multi-Agent Team:** 
-    - **Therapist Agent:** Offers empathetic support and coping strategies.
-    - **Closure Agent:** Writes emotional messages users shouldn't send for catharsis.
-    - **Routine Planner Agent:** Suggests daily routines for emotional recovery.
-    - **Brutal Honesty Agent:** Provides direct, no-nonsense feedback on the breakup.
-- 📷 **Chat Screenshot Analysis:**
-    - Upload screenshots for chat analysis.
-- 🔑 **API Key Management:**
-    - Store and manage your Gemini API keys securely via Streamlit's sidebar.
-- ⚡ **Parallel Execution:** 
-    - Agents process inputs in coordination mode for comprehensive results.
-- ✅ **User-Friendly Interface:** 
-    - Simple, intuitive UI with easy interaction and display of agent responses.
+The AI Breakup Recovery Agent uses a team of specialized AI agents to assist users in emotional recovery. By analyzing user input and optional chat screenshots, the system delivers empathetic guidance, routine planning, cathartic message generation, and honest feedback, offering a structured and supportive path to healing.
 
----
+## Features ⚙️
 
-## 🛠️ Tech Stack
+* 🧠 **Multi-Agent Team:**
 
-- **Frontend:** Streamlit (Python)
-- **AI Models:** Gemini 2.0 Flash (Google Vision Model)
-- **Image Processing:** PIL (for displaying screenshots)
-- **Text Extraction:** Google's Gemini Vision model to analyze chat screenshots
-- **Environment Variables:** API keys managed with `st.session_state` in Streamlit
+  * **Therapist Agent:** Offers empathetic support and coping strategies.
+  * **Closure Agent:** Generates unsent emotional messages for catharsis.
+  * **Routine Planner Agent:** Suggests daily routines to aid emotional recovery.
+  * **Brutal Honesty Agent:** Provides direct, no-nonsense feedback on the breakup.
+* 📷 **Chat Screenshot Analysis:** Users can upload screenshots for analysis.
+* 🔑 **API Key Management:** Securely store and manage Gemini API keys.
+* ⚡ **Parallel Execution:** Agents process inputs collaboratively for comprehensive insights.
+* ✅ **User-Friendly Interface:** Simple and intuitive Streamlit interface.
 
----
+## Tech Stack 🧠
 
-## 📦 Installation
+* **Frontend:** Streamlit (Python)
+* **AI Models:** Gemini 2.0 Flash (Google Vision Model)
+* **Image Processing:** PIL
+* **Text Extraction:** Gemini Vision model
+* **Environment Variables:** Managed via `st.session_state` in Streamlit
 
-1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/Shubhamsaboo/awesome-llm-apps
-   cd ai_agent_tutorials/ai_breakup_recovery_agent
-   ```
+## Setup Instructions 🧩
 
-2. **Install Dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
+### Requirements
 
-4. **Run the Streamlit App:**
-   ```bash
-   streamlit run ai_breakup_recovery_agent.py
-   ```
+* Python 3.10 or higher
+* Gemini API Key
 
----
+### Installation
 
-## 🔑 Environment Variables
+```bash
+git clone https://github.com/tanviiiiir-r/50-days-50-ai-agents.git
+cd 50-days-50-ai-agents/agents/day02_AI_Breakup_Recovery_Agent
+pip install -r requirements.txt
+```
 
-Make sure to provide your **Gemini API key** in the Streamlit sidebar:
+### Run Instructions
 
-- GEMINI_API_KEY=your_google_gemini_api_key
+```bash
+streamlit run ai_breakup_recovery_agent.py
+```
 
----
+## Real-World Use Cases 🧭
 
-## 🛠️ Usage
+* Helping users navigate emotional distress after a breakup.
+* Providing daily structured routines to aid mental wellness.
+* Offering cathartic messaging to release unexpressed feelings.
+* Delivering honest insights to promote self-reflection and growth.
 
-1. **Enter Your Feelings:** 
-    - Describe how you're feeling in the text area.
-2. **Upload Screenshot (Optional):**
-    - Upload a chat screenshot (PNG, JPG, JPEG) for analysis.
-3. **Execute Agents:**
-    - Click **"Get Recovery Support"** to run the multi-agent team.
-4. **View Results:**
-    - Individual agent responses are displayed.
-    - A final summary is provided by the Team Leader.
+## Repository Info 📁
 
----
-
-## 🧑‍💻 Agents Overview
-
-- **Therapist Agent**
-    - Provides empathetic support and coping strategies.
-    - Uses **Gemini 2.0 Flash (Google Vision Model)** and DuckDuckGo tools for insights.
-  
-- **Closure Agent**
-    - Generates unsent emotional messages for emotional release.
-    - Ensures heartfelt and authentic messages.
-
-- **Routine Planner Agent**
-    - Creates a daily recovery routine with balanced activities.
-    - Includes self-reflection, social interaction, and healthy distractions.
-
-- **Brutal Honesty Agent**
-    - Offers direct, objective feedback on the breakup.
-    - Uses factual language with no sugar-coating.
+* **Project Name:** AI Breakup Recovery Agent
+* **Day Number:** 02
+* **Series Name:** 50 Days, 50 AI Agents
+* **Author:** [Md Tanvir Rana](https://github.com/tanviiiiir-r/50-days-50-ai-agents/tree/main/agents/)
+* **Tech Stack:** Streamlit, Gemini 2.0 Flash, Python, PIL
+* **License:** MIT
