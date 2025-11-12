@@ -56,6 +56,6 @@ streamlit run ai_data_analyst.py
 * **Project Name:** AI Data Analysis Agent
 * **Day Number:** 03
 * **Series Name:** 50 Days, 50 AI Agents
-* **Author:** [Md Tanvir Rana](https://github.com/tanviiiiir-r/50-days-50-ai-agents/tree/main/agents/)
+* **Author:** [Md Tanvir Rana](https://github.com/tanviiiiir-r/)
 * **Tech Stack:** Streamlit, GPT-4o, DuckDB, Python
 * **License:** MIT

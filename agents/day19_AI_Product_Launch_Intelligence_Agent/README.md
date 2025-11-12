@@ -1,83 +1,74 @@
 # 🚀 AI Product Launch Intelligence Agent
 
-A **streamlined intelligence hub** for Go-To-Market (GTM) & Product-Marketing teams.  
-Built with **Streamlit + Agno (GPT-4o) + Firecrawl**, the app turns scattered public-web data into concise, actionable launch insights.
+## 💡 Problem
 
-## 3 Specialized Agents in Coordinated Team
+Product marketing and GTM teams often struggle to gather, organize, and analyze scattered public-web information for new product launches. Tracking competitor moves, market sentiment, and KPIs in real-time is labor-intensive and prone to missed insights.
 
-| Tab | What You Get |
-|-----|--------------|
-| **Competitor Analysis Agent** | Evidence-backed breakdown of a rival's latest launches – positioning, differentiators, pricing cues & channel mix |
-| **Market Sentiment Agent** | Consolidated social chatter & review themes split by 🚀 *positive* / ⚠️ *negative* drivers |
-| **Launch Metrics Agent** | Publicly available KPIs – adoption numbers, press coverage, qualitative "buzz" signals |
+## 🚀 Solution
 
-Additional goodies:
+The AI Product Launch Intelligence Agent consolidates public data into concise, actionable insights. By combining GPT-4o with Firecrawl and a multi-agent coordinated approach, it provides structured competitor analysis, market sentiment evaluation, and launch metrics, enabling smarter, faster, and more informed decisions.
 
-* 🔑 **Sidebar key input** – enter OpenAI & Firecrawl keys securely (type="password")
-* 🧠 **Coordinated multi-agent team** – three expert agents work together for richer insight
-  * 🔍 Product Launch Analyst (GTM strategist)
-  * 💬 Market Sentiment Specialist (consumer-perception guru)
-  * 📈 Launch Metrics Specialist (performance analyst)
-* ⚡ **Quick actions** – press **J/K/L** to trigger the three analyses without touching the UI
-* 📑 **Auto-formatted Markdown reports** – bullet summary first, then expanded deep-dive
-* 🛠️ **Sources section** – every report ends with the URLs that were crawled or searched
+## ⚙️ Features
 
-## 🛠️ Tech Stack
+* Evidence-backed competitor analysis with launch positioning, pricing, and channels
+* Market sentiment analysis (positive vs. negative drivers)
+* Publicly available launch metrics tracking (KPIs, adoption, press coverage)
+* Secure API key input via sidebar or `.env`
+* Coordinated multi-agent team (Product Analyst, Market Sentiment Specialist, Launch Metrics Specialist)
+* Quick keyboard shortcuts (J/K/L) to trigger analyses
+* Auto-formatted Markdown reports
+* Sources section listing crawled URLs for transparency
 
-| Layer | Details |
-|-------|---------|
-| Data | **Firecrawl** async search + crawl API |
-| Agents | **Agno Team** (GPT-4o) with FirecrawlTools |
-| UI | **Streamlit** wide-layout, tabbed workflow |
-| LLM | **OpenAI GPT-4o** |
+## 🧠 Tech Stack
 
-## 🚀 Quick Start
+* Python
+* Streamlit (UI)
+* OpenAI GPT-4o
+* Agno AI Agent Framework
+* Firecrawl (async search + crawl API)
 
-1. **Clone** the repository
+## 🧩 Setup Instructions
 
-```bash
-git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
-cd advanced_ai_agents/multi_agent_apps/product_launch_intelligence_agent
-```
+### Requirements
 
-2. **Install** dependencies
+* Python 3.10 or higher
+* OpenAI API key
+* Firecrawl API key
+
+### Installation
 
 ```bash
+# Clone the repository
+git clone https://github.com/tanviiiiir-r/50-days-50-ai-agents.git
+cd 50-days-50-ai-agents/agents/day19_AI_Product_Launch_Intelligence_Agent
+
+# Install dependencies
 pip install -r requirements.txt
 ```
 
-3. **Provide API keys** (choose either option)
-
-   • **Environment variables** – create a `.env` file:
-   ```ini
-   OPENAI_API_KEY=sk-************************
-   FIRECRAWL_API_KEY=fc-************************
-   ```
-   • **In-app sidebar** – paste the keys into the secure text inputs
-
-4. **Run the app**
+### Run Instructions
 
 ```bash
+# Run the Streamlit app
 streamlit run product_launch_intelligence_agent.py
 ```
 
-5. **Browse** to <http://localhost:8501> – you should see three analysis tabs.
+* Enter API keys via sidebar or `.env`
+* Input company/product/hashtag
+* Navigate tabs and analyze
 
-## 🕹️ Using the Application
+## 🧭 Real-World Use Cases
 
-1. Enter **API keys** in the sidebar (or ensure they are in your environment).
-2. Type a **company / product / hashtag** in the main input box.
-3. Pick a tab and hit the corresponding **Analyze** button – a spinner will appear while the coordinated team works.
-4. Review the two-part analysis:
-   * Bullet list of key findings
-   * Expanded, richly-formatted report (tables, call-outs, recommendations)
+* GTM teams tracking competitor product launches
+* Marketing teams monitoring social sentiment and public reactions
+* Product managers evaluating launch KPIs
+* Analysts generating automated launch reports
 
-## 🤖 How the Coordinated Team Works
+## 📁 Repository Info
 
-The application uses a **coordinated team approach** where three specialized agents work together:
-
-- **Product Launch Analyst**: Evaluates competitive positioning, launch strategies, strengths, and weaknesses
-- **Market Sentiment Specialist**: Analyzes social media sentiment, customer feedback, and brand perception  
-- **Launch Metrics Specialist**: Tracks KPIs, adoption rates, press coverage, and performance indicators
-
-The team coordinates based on the analysis type requested, ensuring the most appropriate agent handles each task while maintaining consistency and comprehensive coverage across all analysis types.
+* **Project Name:** AI Product Launch Intelligence Agent
+* **Day Number:** 19
+* **Series Name:** 50 Days, 50 AI Agents
+* **Author:** [Md Tanvir Rana](https://github.com/tanviiiiir-r)
+* **Tech Stack:** Python, Streamlit, GPT-4o, Agno AI Agent Framework, Firecrawl
+* **License:** MIT

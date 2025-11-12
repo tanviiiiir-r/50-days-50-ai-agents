@@ -1,45 +1,71 @@
-## 🦥 Finetune Gemma 3 with Unsloth (simple 4-bit LoRA)
+# 🦥 Finetune Gemma 3 with Unsloth (4-bit LoRA) ⚡
 
-Minimal example to finetune Google's Gemma 3 Instruct models with Unsloth using 4-bit loading + LoRA. Small, readable, and runnable on a CUDA GPU.
+## 💡 Problem
 
-- **Models**: 270M, 1B, 4B, 12B, 27B
-- **Dataset**: FineTome-100k (ShareGPT-style multi-turn chats)
-- **Method**: Parameter-efficient LoRA (not full FT)
+Fine-tuning large language models like Gemma 3 can be resource-intensive and complex. Many users lack access to full GPU resources for full model fine-tuning and need a parameter-efficient, simple approach.
 
-Reference: Unsloth’s Gemma 3 notes: [unsloth.ai/blog/gemma3](https://unsloth.ai/blog/gemma3)
+## 🚀 Solution
 
-### Install
+This minimal example demonstrates how to finetune Google's Gemma 3 Instruct models using Unsloth with 4-bit loading and LoRA adapters. The setup is lightweight, readable, and runs on a CUDA GPU, enabling efficient fine-tuning of multi-turn chat datasets without the overhead of full model training.
+
+## ⚙️ Features
+
+* Supports Gemma 3 models: 270M, 1B, 4B, 12B, 27B
+* Uses FineTome-100k dataset (ShareGPT-style multi-turn chats)
+* Parameter-efficient LoRA adapters instead of full fine-tuning
+* 4-bit quantization for memory-efficient training
+* Simple, readable script with customizable training settings
+
+## 🧠 Tech Stack
+
+* Python 3.10+
+* Unsloth library and `unsloth_zoo`
+* TRL (Transformers Reinforcement Learning) `SFTTrainer`
+* CUDA GPU support for 4-bit/8-bit quantization
+
+## 🧩 Setup Instructions
+
+### Installation
 
 ```bash
 pip install -r requirements.txt
-# or latest Unsloth per their guidance
+# Or upgrade to latest Unsloth per their guidance
 pip install --upgrade --force-reinstall --no-cache-dir unsloth unsloth_zoo
 ```
 
-### Run
+### Run Instructions
 
 ```bash
 python finetune_gemma3.py
 ```
 
-Outputs are saved to `finetuned_model/`.
+Finetuned weights are saved to `finetuned_model/`.
 
-### What the script does
+### Configuration
 
-1. Loads Gemma 3 with 4-bit quantization via Unsloth’s `FastModel`.
-2. Attaches LoRA adapters to attention/MLP projections.
-3. Prepares FineTome-100k by applying the Gemma 3 chat template.
-4. Trains with TRL’s `SFTTrainer` for a few demo steps.
-5. Saves the finetuned weights.
+Edit the top of `finetune_gemma3.py` to change:
 
-### Change model or settings
+* `MODEL_NAME` (e.g., `unsloth/gemma-3-270m-it`, `unsloth/gemma-3-1b-it`)
+* `MAX_SEQ_LEN`, `LOAD_IN_4BIT`, `FULL_FINETUNING`
 
-Edit the top of `finetune_gemma3.py`:
+> Note: 4-bit/8-bit loading requires a CUDA GPU. On Mac (M1/M2), use CPU/MPS or a GPU machine.
 
-- `MODEL_NAME` (e.g., `unsloth/gemma-3-270m-it`, `unsloth/gemma-3-1b-it`)
-- `MAX_SEQ_LEN`, `LOAD_IN_4BIT`, `FULL_FINETUNING`
+## 🧭 Real-World Use Cases
 
-Note: 4-bit/8-bit loading requires a CUDA GPU. On Mac (M1/M2), run on CPU/MPS without quantization or use a GPU machine.
+* Quick fine-tuning of Gemma 3 for specific domains or tasks
+* Research experiments with low-resource setups
+* Adapting large models to multi-turn chat formats
+* Efficient prototype creation for AI assistants or chatbots
 
+## 📁 Repository Info
 
+* **Project Name:** Finetune Gemma 3 with Unsloth
+* **Day Number:** 16
+* **Series Name:** 50 Days, 50 AI Agents
+* **Author:** [Md Tanvir Rana](https://github.com/tanviiiiir-r)
+* **Tech Stack:** Python, Unsloth, TRL, CUDA
+* **License:** MIT
 
+## References
+
+* [Unsloth Gemma 3 Notes](https://unsloth.ai/blog/gemma3)

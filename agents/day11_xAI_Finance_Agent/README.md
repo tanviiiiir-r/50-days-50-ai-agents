@@ -1,40 +1,74 @@
-## 📊 AI Finance Agent with xAI Grok
-This application creates a financial analysis agent powered by xAI's Grok model, combining real-time stock data with web search capabilities. It provides structured financial insights through an interactive playground interface.
+# 💰 AI Finance Agent with xAI Grok 🚀
 
-### Features
+## 💡 Problem
 
-- Powered by xAI's Grok-beta model
-- Real-time stock data analysis via YFinance
-- Web search capabilities through DuckDuckGo
-- Formatted output with tables for financial data
-- Interactive playground interface
+Managing personal or professional investments requires timely and accurate financial insights. Many individuals struggle to access real-time stock data, perform analysis, and interpret results in a structured format. Manual analysis can be slow, error-prone, and overwhelming for users without a finance background.
 
-### How to get Started?
+## 🚀 Solution
 
-1. Clone the GitHub repository
+The AI Finance Agent leverages xAI's Grok-beta model to provide real-time financial analysis. By combining stock market data from YFinance with web search capabilities from DuckDuckGo, it delivers structured insights in an interactive playground interface. Users can obtain actionable financial information quickly, with tables and formatted outputs simplifying complex data.
+
+## ⚙️ Features
+
+* Real-time stock data analysis using YFinance
+* Web search capabilities through DuckDuckGo for up-to-date information
+* Structured and formatted outputs including tables for clarity
+* Interactive playground interface for seamless user experience
+* Powered by xAI's Grok-beta model for advanced AI-driven financial insights
+
+## 🧠 Tech Stack
+
+* Python 3.10+
+* xAI Grok-beta API
+* YFinance for stock data
+* DuckDuckGo search API
+* Streamlit (or custom interactive playground)
+
+## 🧩 Setup Instructions
+
+### Requirements
+
+* Python 3.10 or higher
+* xAI API Key
+* Internet connection for real-time data
+
+### Installation
+
 ```bash
-git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
-cd awesome-llm-apps/ai_agent_tutorials/xai_finance_agent
-```
+# Clone the repository
+git clone https://github.com/tanviiiiir-r/50-days-50-ai-agents.git
+cd 50-days-50-ai-agents/agents/day11_xAI_Finance_Agent
 
-2. Install the required dependencies:
-
-```bash
-cd awesome-llm-apps/ai_agent_tutorials/xai_finance_agent
+# Install dependencies
 pip install -r requirements.txt
 ```
 
-3. Get your OpenAI API Key
+### Environment Setup
 
-- Sign up for an [xAI API account](https://console.x.ai/)
-- Set your XAI_API_KEY environment variable.
 ```bash
 export XAI_API_KEY='your-api-key-here'
 ```
 
-4. Run the team of AI Agents
+### Run Instructions
+
 ```bash
 python xai_finance_agent.py
 ```
 
-5. Open your web browser and navigate to the URL provided in the console output to interact with the AI financial agent through the playground interface.
+Then open your web browser and navigate to the URL displayed in the console to interact with the AI Finance Agent.
+
+## 🧭 Real-World Use Cases
+
+* Real-time portfolio analysis for individual investors
+* Market trend insights for financial advisors
+* Quick evaluation of stock performance for trading decisions
+* Financial research support for analysts and students
+
+## 📁 Repository Info
+
+* **Project Name:** xAI Finance Agent
+* **Day Number:** 11
+* **Series Name:** 50 Days, 50 AI Agents
+* **Author:** [Md Tanvir Rana](https://github.com/tanviiiiir-r)
+* **Tech Stack:** Python, xAI Grok-beta, YFinance, DuckDuckGo, Streamlit
+* **License:** MIT

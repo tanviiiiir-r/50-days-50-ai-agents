@@ -1,41 +1,70 @@
-## 🗞️ AI Journalist Agent 
-This Streamlit app is an AI-powered journalist agent that generates high-quality articles using OpenAI GPT-4o. It automates the process of researching, writing, and editing articles, allowing you to create compelling content on any topic with ease.
+# 🗞️ AI Journalist Agent
 
-### Features
-- Searches the web for relevant information on a given topic
-- Writes well-structured, informative, and engaging articles
-- Edits and refines the generated content to meet the high standards of the New York Times
+## 💡 Problem
 
-### How to get Started?
+Writing high-quality articles requires time, research, and editorial skill. For content creators and journalists, gathering relevant information, composing engaging text, and refining the output can be slow and labor-intensive.
 
-1. Clone the GitHub repository
+## 🚀 Solution
+
+The AI Journalist Agent automates the entire article creation process using GPT-4o and SerpAPI. It conducts web research, writes well-structured articles, and performs editing and refinement, enabling users to generate professional-grade content quickly and efficiently.
+
+## ⚙️ Features
+
+* Automatic web search for relevant information based on a topic
+* High-quality article writing with coherent structure and engaging language
+* Editing and refinement to meet professional standards
+* Streamlined, automated workflow for researching, writing, and editing
+
+## 🧠 Tech Stack
+
+* Python
+* Streamlit
+* OpenAI GPT-4o
+* SerpAPI
+* NewspaperToolkit
+
+## 🧩 Setup Instructions
+
+### Requirements
+
+* Python 3.10 or higher
+* OpenAI API key
+* SerpAPI key
+
+### Installation
 
 ```bash
-git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
-cd advanced_ai_agents/single_agent_apps/ai_journalist_agent
-```
-2. Install the required dependencies:
+# Clone the repository
+git clone https://github.com/tanviiiiir-r/50-days-50-ai-agents.git
+cd 50-days-50-ai-agents/agents/day20_AI_Journalist_Agent
 
-```bash
+# Install dependencies
 pip install -r requirements.txt
 ```
-3. Get your OpenAI API Key
 
-- Sign up for an [OpenAI account](https://platform.openai.com/) (or the LLM provider of your choice) and obtain your API key.
+### Run Instructions
 
-4. Get your SerpAPI Key
-
-- Sign up for an [SerpAPI account](https://serpapi.com/) and obtain your API key.
-
-5. Run the Streamlit App
 ```bash
+# Run the Streamlit app
 streamlit run journalist_agent.py
 ```
 
-### How it Works?
+* Enter your OpenAI and SerpAPI keys when prompted
+* Input the topic for the article
+* Let the AI generate, write, and edit your article
 
-The AI Journalist Agent utilizes three main components:
-- Searcher: Responsible for generating search terms based on the given topic and searching the web for relevant URLs using the SerpAPI.
-- Writer: Retrieves the text from the provided URLs using the NewspaperToolkit and writes a high-quality article based on the extracted information.
-- Editor: Coordinates the workflow between the Searcher and Writer, and performs final editing and refinement of the generated article.
+## 🧭 Real-World Use Cases
 
+* Content creators generating articles quickly
+* Journalists researching and drafting stories
+* Marketing teams producing blog content
+* Educational use for learning AI-assisted writing
+
+## 📁 Repository Info
+
+* **Project Name:** AI Journalist Agent
+* **Day Number:** 20
+* **Series Name:** 50 Days, 50 AI Agents
+* **Author:** [Md Tanvir Rana](https://github.com/tanviiiiir-r)
+* **Tech Stack:** Python, Streamlit, GPT-4o, SerpAPI, NewspaperToolkit
+* **License:** MIT

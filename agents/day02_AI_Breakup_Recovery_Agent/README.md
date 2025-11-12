@@ -62,6 +62,6 @@ streamlit run ai_breakup_recovery_agent.py
 * **Project Name:** AI Breakup Recovery Agent
 * **Day Number:** 02
 * **Series Name:** 50 Days, 50 AI Agents
-* **Author:** [Md Tanvir Rana](https://github.com/tanviiiiir-r/50-days-50-ai-agents/tree/main/agents/)
+* **Author:** [Md Tanvir Rana](https://github.com/tanviiiiir-r/)
 * **Tech Stack:** Streamlit, Gemini 2.0 Flash, Python, PIL
 * **License:** MIT

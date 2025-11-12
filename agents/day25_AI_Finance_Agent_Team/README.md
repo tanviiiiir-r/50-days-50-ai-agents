@@ -1,40 +1,78 @@
-## 💲 AI Finance Agent Team with Web Access
-This script demonstrates how to build a team of AI agents that work together as a financial analyst using GPT-4o in just 20 lines of Python code. The system combines web search capabilities with financial data analysis tools to provide comprehensive financial insights.
+# 💲 AI Finance Agent Team with Web Access
 
-### Features
-- Multi-agent system with specialized roles:
-    - Web Agent for general internet research
-    - Finance Agent for detailed financial analysis
-    - Team Agent for coordinating between agents
-- Real-time financial data access through YFinance
-- Web search capabilities using DuckDuckGo
-- Persistent storage of agent interactions using SQLite
+## 💡 Problem
 
-### How to get Started?
+Financial analysis requires gathering data from multiple sources, evaluating trends, and making informed decisions quickly. Manual research is time-consuming, prone to errors, and difficult to scale for real-time insights.
 
-1. Clone the GitHub repository
+## 🚀 Solution
+
+The AI Finance Agent Team provides a multi-agent system that automates financial research and analysis. Using GPT-4o, the system combines web search capabilities with financial data analytics to deliver comprehensive insights efficiently. Specialized agents coordinate seamlessly to provide high-quality financial recommendations.
+
+## ⚙️ Features
+
+* Multi-agent system with specialized roles:
+
+  * **Web Agent** for general internet research
+  * **Finance Agent** for detailed financial analysis
+  * **Team Agent** for coordinating between agents
+* Real-time financial data access through **YFinance**
+* Web search capabilities using **DuckDuckGo**
+* Persistent storage of agent interactions using **SQLite**
+
+## 🧠 Tech Stack
+
+* Python 3.10+
+* OpenAI GPT-4o
+* YFinance
+* DuckDuckGo search API
+* SQLite
+* Flask or Streamlit (for playground interface)
+
+## 🧩 Setup Instructions
+
+### Requirements
+
+* OpenAI API Key
+* Python 3.10 or above
+
+### Installation
+
 ```bash
-git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
-cd advanced_ai_agents/multi_agent_apps/agent_teams/ai_finance_agent_team
-```
+# Clone the repository
+git clone https://github.com/tanviiiiir-r/50-days-50-ai-agents.git
+cd 50-days-50-ai-agents/agents/day25_AI_Finance_Agent_Team
 
-2. Install the required dependencies:
-
-```bash
+# Install dependencies
 pip install -r requirements.txt
 ```
 
-3. Get your OpenAI API Key
+### Configuration
 
-- Sign up for an [OpenAI account](https://platform.openai.com/) (or the LLM provider of your choice) and obtain your API key.
-- Set your OpenAI API key as an environment variable:
 ```bash
+# Set your OpenAI API key as an environment variable
 export OPENAI_API_KEY='your-api-key-here'
 ```
 
-4. Run the team of AI Agents
+### Run Instructions
+
 ```bash
 python3 finance_agent_team.py
 ```
 
-5. Open your web browser and navigate to the URL provided in the console output to interact with the team of AI agents through the playground interface.
+* Open your web browser and navigate to the URL provided in the console to interact with the AI Finance Agent Team.
+
+## 🧭 Real-World Use Cases
+
+* Automated stock market analysis and recommendations
+* Portfolio risk assessment and optimization
+* Financial news summarization for decision making
+* Real-time trend monitoring for investors and analysts
+
+## 📁 Repository Info
+
+* **Project Name:** AI Finance Agent Team with Web Access
+* **Day Number:** 25
+* **Series Name:** 50 Days, 50 AI Agents
+* **Author:** [Md Tanvir Rana](https://github.com/tanviiiiir-r)
+* **Tech Stack:** Python, GPT-4o, YFinance, DuckDuckGo, SQLite
+* **License:** MIT

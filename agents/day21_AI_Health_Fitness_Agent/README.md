@@ -1,53 +1,68 @@
-# AI Health & Fitness Planner Agent 🏋️‍♂️
+# 🏋️‍♂️ AI Health & Fitness Planner Agent
 
-The **AI Health & Fitness Planner** is a personalized health and fitness Agent powered by Agno AI Agent framework. This app generates tailored dietary and fitness plans based on user inputs such as age, weight, height, activity level, dietary preferences, and fitness goals.
+## 💡 Problem
 
-## Features
+Creating personalized health and fitness plans requires time, expertise, and consistent tracking. Users often struggle to find accurate dietary and exercise recommendations that fit their individual profiles, including age, weight, activity level, and dietary preferences.
 
-- **Health Agent and Fitness Agent**
-    - The app has two phidata agents that are specialists in giving Diet advice and Fitness/workout advice respectively.
+## 🚀 Solution
 
-- **Personalized Dietary Plans**:
-  - Generates detailed meal plans (breakfast, lunch, dinner, and snacks).
-  - Includes important considerations like hydration, electrolytes, and fiber intake.
-  - Supports various dietary preferences like Keto, Vegetarian, Low Carb, etc.
+The AI Health & Fitness Planner Agent leverages GPT-powered Agno AI Agents to provide personalized dietary and fitness plans. By considering user-specific data, it generates tailored meal and workout routines, offers interactive guidance, and provides ongoing Q&A support, helping users achieve their health and fitness goals efficiently.
 
-- **Personalized Fitness Plans**:
-  - Provides customized exercise routines based on fitness goals.
-  - Covers warm-ups, main workouts, and cool-downs.
-  - Includes actionable fitness tips and progress tracking advice.
+## ⚙️ Features
 
-- **Interactive Q&A**: Allows users to ask follow-up questions about their plans.
+* **Dual Specialist Agents**: Health Agent for diet and Fitness Agent for workouts
+* **Personalized Dietary Plans**: Detailed meal plans for breakfast, lunch, dinner, and snacks with hydration and nutrient considerations, supporting diets like Keto, Vegetarian, Low Carb, etc.
+* **Personalized Fitness Plans**: Customized routines including warm-ups, main workouts, cool-downs, tips, and progress tracking advice
+* **Interactive Q&A**: Users can ask follow-up questions for additional guidance
 
+## 🧠 Tech Stack
 
-## Requirements
+* Python
+* Streamlit (UI)
+* Agno AI Agent Framework
+* Google Gemini API (for AI model access)
 
-The application requires the following Python libraries:
+## 🧩 Setup Instructions
 
-- `agno`
-- `google-generativeai`
-- `streamlit`
+### Requirements
 
-Ensure these dependencies are installed via the `requirements.txt` file according to their mentioned versions
+* Python 3.10 or higher
+* Gemini API key (Google AI)
 
-## How to Run
+### Installation
 
-Follow the steps below to set up and run the application:
-Before anything else, Please get a free Gemini API Key provided by Google AI here: https://aistudio.google.com/apikey
+```bash
+# Clone the repository
+git clone https://github.com/tanviiiiir-r/50-days-50-ai-agents.git
+cd 50-days-50-ai-agents/agents/day21_AI_Health_Fitness_Agent
 
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
-   cd advanced_ai_agents/single_agent_apps/ai_health_fitness_agent
-   ```
+# Install dependencies
+pip install -r requirements.txt
+```
 
-2. **Install the dependencies**
-    ```bash
-    pip install -r requirements.txt
-    ```
-3. **Run the Streamlit app**
-    ```bash
-    streamlit run health_agent.py
-    ```
+### Run Instructions
 
+```bash
+# Run the Streamlit app
+streamlit run health_agent.py
+```
 
+* Enter your Gemini API key when prompted
+* Input personal health data (age, weight, height, activity level, dietary preferences, goals)
+* Receive personalized dietary and fitness plans
+
+## 🧭 Real-World Use Cases
+
+* Individuals seeking customized diet and workout plans
+* Fitness trainers automating client plans
+* Health coaches providing personalized guidance
+* Educational tool for learning about nutrition and exercise planning
+
+## 📁 Repository Info
+
+* **Project Name:** AI Health & Fitness Planner Agent
+* **Day Number:** 21
+* **Series Name:** 50 Days, 50 AI Agents
+* **Author:** [Md Tanvir Rana](https://github.com/tanviiiiir-r)
+* **Tech Stack:** Python, Streamlit, Agno AI Agent Framework, Google Gemini API
+* **License:** MIT

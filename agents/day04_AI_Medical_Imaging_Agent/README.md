@@ -1,65 +1,83 @@
-# 🩻 Medical Imaging Diagnosis Agent
+# 🩻 Medical Imaging Diagnosis Agent (Day 04) 💡
 
-A Medical Imaging Diagnosis Agent build on agno powered by Gemini 2.0 Flash that provides AI-assisted analysis of medical images of various scans. The agent acts as a medical imaging diagnosis expert to analyze various types of medical images and videos, providing detailed diagnostic insights and explanations.
+## Problem Section 💡
 
-## Features
+Medical imaging interpretation requires specialized expertise and experience, which is not always accessible to all practitioners or patients. Non-experts may struggle to understand scan results, and healthcare professionals may benefit from AI-assisted support to streamline analysis and detect subtle abnormalities. There is a need for an AI solution that aids in the rapid and accurate interpretation of medical images.
 
-- **Comprehensive Image Analysis**
-  - Image Type Identification (X-ray, MRI, CT scan, ultrasound)
-  - Anatomical Region Detection
-  - Key Findings and Observations
-  - Potential Abnormalities Detection
-  - Image Quality Assessment
-  - Research and Reference
+## Solution Section 🚀
 
-## How to Run
+The Medical Imaging Diagnosis Agent leverages Gemini 2.0 Flash to provide AI-assisted analysis of various medical imaging modalities, including X-ray, MRI, CT scans, and ultrasounds. It identifies image types, anatomical regions, key observations, and potential abnormalities. Additionally, it generates patient-friendly explanations and research-backed references to support medical decision-making.
 
-1. **Setup Environment**
-   ```bash
-   # Clone the repository
-   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
-   cd ai_agent_tutorials/ai_medical_imaging_agent
+## Features ⚙️
 
-   # Install dependencies
-   pip install -r requirements.txt
-   ```
+* **Comprehensive Image Analysis:**
 
-2. **Configure API Keys**
-   - Get Google API key from [Google AI Studio](https://aistudio.google.com)
+  * Identifies imaging modality (X-ray, MRI, CT, ultrasound)
+  * Detects anatomical regions
+  * Highlights key findings and potential abnormalities
+  * Assesses image quality
+  * Provides research references
+* **Diagnostic Assessment:**
 
-3. **Run the Application**
-   ```bash
-   streamlit run ai_medical_imaging.py
-   ```
+  * Generates potential diagnoses with rankings
+  * Suggests differential diagnoses
+  * Severity assessment of findings
+* **Patient-Friendly Explanations:**
 
-## Analysis Components
+  * Simplified terminology
+  * First-principles explanations
+  * Visual reference points for clarity
 
-- **Image Type and Region**
-  - Identifies imaging modality
-  - Specifies anatomical region
+## Tech Stack 🧠
 
-- **Key Findings**
-  - Systematic listing of observations
-  - Detailed appearance descriptions
-  - Abnormality highlighting
+* **Frontend:** Streamlit (Python)
+* **AI Models:** Gemini 2.0 Flash (Google Vision Model)
+* **Image Processing:** PIL / OpenCV
+* **Environment Management:** API keys handled via Streamlit session state
 
-- **Diagnostic Assessment**
-  - Potential diagnoses ranking
-  - Differential diagnoses
-  - Severity assessment
+## Setup Instructions 🧩
 
-- **Patient-Friendly Explanations**
-  - Simplified terminology
-  - Detailed first-principles explanations
-  - Visual reference points
+### Requirements
+
+* Python 3.10 or higher
+* Google API Key (Gemini)
+
+### Installation
+
+```bash
+git clone https://github.com/tanviiiiir-r/50-days-50-ai-agents.git
+cd 50-days-50-ai-agents/agents/day04_Medical_Imaging_Diagnosis_Agent
+pip install -r requirements.txt
+```
+
+### Run Instructions
+
+```bash
+streamlit run ai_medical_imaging.py
+```
+
+## Real-World Use Cases 🧭
+
+* Assisting radiologists in detecting abnormalities quickly.
+* Supporting medical students in learning image interpretation.
+* Providing patient-friendly explanations for consultations.
+* Research and educational purposes in medical imaging analysis.
 
 ## Notes
 
-- Uses Gemini 2.0 Flash for analysis
-- Requires stable internet connection
-- Free API usage costs -  1,500 free requests per day by google!
-- For educational and development purposes only
-- Not a replacement for professional medical diagnosis
+* Requires stable internet connection
+* Google provides up to 1,500 free API requests per day
+* Intended for educational and development purposes only
+* Not a replacement for professional medical diagnosis
+
+## Repository Info 📁
+
+* **Project Name:** Medical Imaging Diagnosis Agent
+* **Day Number:** 04
+* **Series Name:** 50 Days, 50 AI Agents
+* **Author:** [Md Tanvir Rana](https://github.com/tanviiiiir-r/)
+* **Tech Stack:** Streamlit, Gemini 2.0 Flash, Python, PIL/OpenCV
+* **License:** MIT
 
 ## Disclaimer
 

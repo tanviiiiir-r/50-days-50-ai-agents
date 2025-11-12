@@ -1,74 +1,89 @@
-# 🤖 AI System Architect Advisor with R1
+# 🤖 AI System Architect Advisor Agent
 
-An Agno agentic system that provides expert software architecture analysis and recommendations using a dual-model approach combining DeepSeek R1's Reasoning and Claude. The system provides detailed technical analysis, implementation roadmaps, and architectural decisions for complex software systems.
+## 💡 Problem
 
-## Features
+Designing complex software systems requires expertise in architecture patterns, infrastructure planning, security, and scalability. Teams often struggle to make informed architectural decisions, assess risks, and estimate costs effectively for diverse systems.
 
-- **Dual AI Model Architecture**
-  - **DeepSeek Reasoner**: Provides initial technical analysis and structured reasoning about architecture patterns, tools, and implementation strategies
-  - **Claude-3.5**: Generates detailed explanations, implementation roadmaps, and technical specifications based on DeepSeek's analysis
+## 🚀 Solution
 
-- **Comprehensive Analysis Components**
-  - Architecture Pattern Selection
-  - Infrastructure Resource Planning
-  - Security Measures and Compliance
-  - Database Architecture
-  - Performance Requirements
-  - Cost Estimation
-  - Risk Assessment
+The AI System Architect Advisor Agent leverages a dual-model agent approach using DeepSeek R1 and Claude-3.5. DeepSeek Reasoner provides structured technical analysis and recommendations, while Claude generates detailed implementation roadmaps and explanations. This enables teams to receive comprehensive software architecture guidance efficiently.
 
-- **Analysis Types**
-  - Real-time Event Processing Systems
-  - Healthcare Data Platforms
-  - Financial Trading Platforms
-  - Multi-tenant SaaS Solutions
-  - Digital Content Delivery Networks
-  - Supply Chain Management Systems
+## ⚙️ Features
 
-## How to Run
+* **Dual AI Model Architecture**
 
-1. **Setup Environment**
-   ```bash
-   # Clone the repository
-   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
-   cd advanced_ai_agents/single_agent_apps/ai_system_architect_r1
-   
-   # Install dependencies
-   pip install -r requirements.txt
-   ```
+  * DeepSeek Reasoner: Initial technical analysis and reasoning on architecture, tools, and implementation strategies
+  * Claude-3.5: Detailed explanations, implementation roadmaps, and technical specifications based on DeepSeek's analysis
+* **Comprehensive Analysis Components**
 
-2. **Configure API Keys**
-   - Get DeepSeek API key from DeepSeek platform
-   - Get Anthropic API key from [Anthropic Platform](https://www.anthropic.com)
+  * Architecture Pattern Selection
+  * Infrastructure Resource Planning
+  * Security Measures and Compliance
+  * Database Architecture
+  * Performance Requirements
+  * Cost Estimation
+  * Risk Assessment
+* **Analysis Types**
 
-3. **Run the Application**
-   ```bash
-   streamlit run ai_system_architect_r1.py
-   ```
+  * Real-time Event Processing Systems
+  * Healthcare Data Platforms
+  * Financial Trading Platforms
+  * Multi-tenant SaaS Solutions
+  * Digital Content Delivery Networks
+  * Supply Chain Management Systems
 
-4. **Use the Interface**
-   - Enter API credentials in sidebar
-   - Structure your prompt with:
-     - Project Context
-     - Requirements
-     - Constraints
-     - Scale
-     - Security/Compliance needs
-   - View detailed analysis results
+## 🧠 Tech Stack
 
-## Example Test Prompts:
+* Python
+* Streamlit (UI)
+* Agno AI Agent Framework
+* DeepSeek R1 (reasoning engine)
+* Claude-3.5 (detailed explanations)
 
-### 1. Financial Trading Platform
-"We need to build a high-frequency trading platform that processes market data streams, executes trades with sub-millisecond latency, maintains audit trails, and handles complex risk calculations. The system needs to be globally distributed, handle 100,000 transactions per second, and have robust disaster recovery capabilities."
-### 2. Multi-tenant SaaS Platform
-"Design a multi-tenant SaaS platform for enterprise resource planning that needs to support customization per tenant, handle different data residency requirements, support offline capabilities, and maintain performance isolation between tenants. The system should scale to 10,000 concurrent users and support custom integrations."
+## 🧩 Setup Instructions
 
-## Notes
+### Requirements
 
-- Requires both DeepSeek and Anthropic API keys
-- Provides real-time analysis with detailed explanations
-- Supports chat-based interaction
-- Includes clear reasoning for all architectural decisions
-- API usage costs apply
+* Python 3.10 or higher
+* DeepSeek API key
+* Anthropic API key (Claude-3.5)
 
+### Installation
 
+```bash
+# Clone the repository
+git clone https://github.com/tanviiiiir-r/50-days-50-ai-agents.git
+cd 50-days-50-ai-agents/agents/day22_AI_System_Architect_Agent
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+### Run Instructions
+
+```bash
+# Run the Streamlit app
+streamlit run ai_system_architect_r1.py
+```
+
+* Enter your DeepSeek and Anthropic API keys in the sidebar
+* Provide project context, requirements, constraints, scale, and security/compliance needs
+* View detailed architectural analysis
+
+## 🧭 Real-World Use Cases
+
+* High-frequency financial trading platforms
+* Multi-tenant SaaS platforms
+* Healthcare data management systems
+* Digital content delivery networks
+* Supply chain management solutions
+* Real-time event processing systems
+
+## 📁 Repository Info
+
+* **Project Name:** AI System Architect Advisor Agent
+* **Day Number:** 22
+* **Series Name:** 50 Days, 50 AI Agents
+* **Author:** [Md Tanvir Rana](https://github.com/tanviiiiir-r)
+* **Tech Stack:** Python, Streamlit, Agno AI Agent Framework, DeepSeek R1, Claude-3.5
+* **License:** MIT

@@ -1,87 +1,76 @@
-# 🔍 AI Domain Deep Research Agent
+# 🔬 AI Domain Deep Research Agent 🧠
 
-An advanced AI research agent built using the Agno Agent framework, Together AI's Qwen model, and Composio tools. This agent helps users conduct comprehensive research on any topic by generating research questions, finding answers through multiple search engines, and compiling professional reports with Google Docs integration.
+## 💡 Problem
 
-## Features
+Conducting deep research across multiple domains is time-consuming and requires access to diverse sources. Generating meaningful questions, gathering accurate information, and compiling professional reports often demands significant expertise and coordination.
 
-- 🧠 **Intelligent Question Generation**:
+## 🚀 Solution
 
-  - Automatically generates 5 specific research questions about your topic
-  - Tailors questions to your specified domain
-  - Focuses on creating yes/no questions for clear research outcomes
-- 🔎 **Multi-Source Research**:
+The AI Domain Deep Research Agent automates comprehensive research by generating domain-specific questions, gathering information from multiple search engines, and compiling findings into a professional, McKinsey-style report. Integrated with Google Docs, it allows users to access and share research easily, all through an intuitive Streamlit interface.
 
-  - Uses Tavily Search for comprehensive web results
-  - Leverages Perplexity AI for deeper analysis
-  - Combines multiple sources for thorough research
-- 📊 **Professional Report Generation**:
+## ⚙️ Features
 
-  - Compiles research findings into a McKinsey-style report
-  - Structures content with executive summary, analysis, and conclusion
-  - Creates a Google Doc with the complete report
-- 🖥️ **User-Friendly Interface**:
+* **Intelligent Question Generation**: Generates 5 domain-specific research questions focused on clear outcomes
+* **Multi-Source Research**: Aggregates insights from Tavily Search, Perplexity AI, and other sources
+* **Professional Report Generation**: Creates structured reports with executive summaries, analysis, and conclusions in Google Docs
+* **User-Friendly Interface**: Streamlit UI with real-time progress tracking and expandable result sections
 
-  - Clean Streamlit UI with intuitive workflow
-  - Real-time progress tracking
-  - Expandable sections to view detailed results
+## 🧠 Tech Stack
 
-## How to Run
+* Python 3.10+
+* Agno Agent Framework for orchestration
+* Together AI Qwen 3 235B model for advanced language processing
+* Composio tools for search integration and Google Docs export
+* Streamlit for interactive UI
 
-1. **Setup Environment**
+## 🧩 Setup Instructions
 
-   ```bash
-   # Clone the repository
-   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
-   cd advanced_ai_agents/single_agent_apps/ai_domain_deep_research_agent
+### Requirements
 
-   # Install dependencies
-   pip install -r requirements.txt
+* Python 3.10 or higher
+* Together AI API Key
+* Composio API Key
+* Internet connection for web search and Google Docs
 
-   composio add googledocs
-   composio add perplexityai
-   ```
-2. **Configure API Keys**
+### Installation
 
-   - Get Together AI API key from [Together AI](https://together.ai)
-   - Get Composio API key from [Composio](https://composio.ai)
-   - Add these to a `.env` file or enter them in the app sidebar
-3. **Run the Application**
+```bash
+# Clone the repository
+git clone https://github.com/tanviiiiir-r/50-days-50-ai-agents.git
+cd 50-days-50-ai-agents/agents/day14_AI_Deep_Research_Agent
 
-   ```bash
-   streamlit run ai_domain_deep_research_agent.py
-   ```
+# Install dependencies
+pip install -r requirements.txt
 
-## Usage
+# Add Composio tools
+composio add googledocs
+composio add perplexityai
+```
 
-1. Launch the application using the command above
-2. Enter your Together AI and Composio API keys in the sidebar
-3. Input your research topic and domain in the main interface
-4. Click "Generate Research Questions" to create specific questions
-5. Review the questions and click "Start Research" to begin the research process
-6. Once research is complete, click "Compile Final Report" to generate a professional report
-7. View the report in the app and access it in Google Docs
+### Environment Setup
 
-## Technical Details
+* Store API keys in a `.env` file or input directly in the app sidebar
 
-- **Agno Framework**: Used for creating and orchestrating AI agents
-- **Together AI**: Provides the Qwen 3 235B model for advanced language processing
-- **Composio Tools**: Integrates search engines and Google Docs functionality
-- **Streamlit**: Powers the user interface with interactive elements
+### Run Instructions
 
-## Example Use Cases
+```bash
+streamlit run ai_domain_deep_research_agent.py
+```
 
-- **Academic Research**: Quickly gather information on academic topics across various disciplines
-- **Market Analysis**: Research market trends, competitors, and industry developments
-- **Policy Research**: Analyze policy implications and historical context
-- **Technology Evaluation**: Research emerging technologies and their potential impact
+Follow the on-screen interface to enter API keys, input your research topic, generate questions, conduct research, and compile the final report.
 
-## Dependencies
+## 🧭 Real-World Use Cases
 
-- agno
-- composio_agno
-- streamlit
-- python-dotenv
+* Academic research across various disciplines
+* Market and competitor analysis for businesses
+* Policy research and historical analysis
+* Technology evaluation and impact studies
 
-## License
+## 📁 Repository Info
 
-This project is part of the awesome-llm-apps collection and is available under the MIT License.
+* **Project Name:** AI Domain Deep Research Agent
+* **Day Number:** 14
+* **Series Name:** 50 Days, 50 AI Agents
+* **Author:** [Md Tanvir Rana](https://github.com/tanviiiiir-r)
+* **Tech Stack:** Python, Agno, Together AI, Composio, Streamlit
+* **License:** MIT

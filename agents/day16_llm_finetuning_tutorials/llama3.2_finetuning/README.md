@@ -1,85 +1,87 @@
-## 🦙 Finetune Llama 3.2 in 30 Lines of Python
+# 🦙 Finetune Llama 3.2 in 30 Lines of Python ⚡
 
-This script demonstrates how to finetune the Llama 3.2 model using the [Unsloth](https://unsloth.ai/) library, which makes the process easy and fast. You can run this example to finetune Llama 3.1 1B and 3B models for free in Google Colab.
+## 💡 Problem
 
-### Features
+Fine-tuning large models like Llama 3.2 can be complex and resource-intensive. Users need an efficient, straightforward way to adapt the model to specific datasets without requiring extensive computational resources.
 
-- Finetunes Llama 3.2 model using the Unsloth library
-- Implements Low-Rank Adaptation (LoRA) for efficient finetuning
-- Uses the FineTome-100k dataset for training
-- Configurable for different model sizes (1B and 3B)
+## 🚀 Solution
+
+This script demonstrates how to finetune the Llama 3.2 model using the Unsloth library with LoRA for parameter-efficient training. It is simple, fast, and can run on free Google Colab GPUs, making it accessible for research and experimentation.
+
+## ⚙️ Features
+
+* Finetunes Llama 3.2 using Unsloth
+* Implements Low-Rank Adaptation (LoRA) for efficient fine-tuning
+* Uses FineTome-100k dataset for multi-turn chat training
+* Configurable for different model sizes (1B and 3B)
+* Easy to run in Google Colab
+
+## 🧠 Tech Stack
+
+* Python 3.10+
+* Unsloth library
+* Transformers
+* TRL (SFTTrainer)
+* FineTome-100k dataset
+* Google Colab GPU support
+
+## 🧩 Setup Instructions
 
 ### Installation
 
-1. Clone the repository:
-
 ```bash
-git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
-cd awesome-llm-apps/llm_finetuning_tutorials/llama3.2_finetuning
-```
+# Clone the repository
+git clone https://github.com/tanviiiiir-r/50-days-50-ai-agents.git
+cd 50-days-50-ai-agents/agents/day16_llm_finetuning_tutorials/llama3.2_finetuning
 
-2. Install the required dependencies:
-
-```bash
+# Install dependencies
 pip install -r requirements.txt
 ```
 
-## Usage
-
-1. Open the script in Google Colab or your preferred Python environment.
-
-2. Run the script to start the finetuning process:
+### Run Instructions
 
 ```bash
-# Run the entire script
 python finetune_llama3.2.py
 ```
 
-3. The finetuned model will be saved in the "finetuned_model" directory.
+The finetuned model will be saved to the `finetuned_model` directory.
 
-## How it Works
+### Configuration
 
-1. **Model Loading**: The script loads the Llama 3.2 3B Instruct model using Unsloth's FastLanguageModel.
+* `model_name`: Choose model (e.g., `unsloth/Llama-3.1-1B-Instruct`)
+* `max_seq_length`: Set maximum sequence length
+* `r`: LoRA rank
+* Adjust training hyperparameters in `TrainingArguments`
 
-2. **LoRA Setup**: Low-Rank Adaptation is applied to specific layers of the model for efficient finetuning.
+### Customization
 
-3. **Data Preparation**: The FineTome-100k dataset is loaded and preprocessed using a chat template.
+* Replace `load_dataset` call to use a different dataset
+* Modify `target_modules` to finetune different layers
+* Change chat template in `get_chat_template` for different conversational formats
 
-4. **Training Configuration**: The script sets up the SFTTrainer with specific training arguments.
+### Running on Google Colab
 
-5. **Finetuning**: The model is finetuned on the prepared dataset.
-
-6. **Model Saving**: The finetuned model is saved to disk.
-
-## Configuration
-
-You can modify the following parameters in the script:
-
-- `model_name`: Change to "unsloth/Llama-3.1-1B-Instruct" for the 1B model
-- `max_seq_length`: Adjust the maximum sequence length
-- `r`: LoRA rank
-- Training hyperparameters in `TrainingArguments`
-
-## Customization
-
-- To use a different dataset, replace the `load_dataset` function call with your desired dataset.
-- Adjust the `target_modules` in the LoRA setup to finetune different layers of the model.
-- Modify the chat template in `get_chat_template` if you're using a different conversational format.
-
-## Running on Google Colab
-
-1. Open a new Google Colab notebook.
-2. Copy the entire script into a code cell.
-3. Add a cell at the beginning to install the required libraries:
+1. Open a new Colab notebook
+2. Install required libraries:
 
 ```
 !pip install torch transformers datasets trl unsloth
 ```
 
-4. Run the cells to start the finetuning process.
+3. Copy and run the script
 
-## Notes
+## 🧭 Real-World Use Cases
 
-- This script is optimized for running on Google Colab's free tier, which provides access to GPUs.
-- The finetuning process may take some time, depending on the model size and the available computational resources.
-- Make sure you have enough storage space in your Colab instance to save the finetuned model.
+* Efficiently adapt Llama 3.2 for domain-specific chatbots
+* Rapid experimentation on conversational datasets
+* Low-resource fine-tuning for research purposes
+* Prototyping AI assistants or support agents
+
+## 📁 Repository Info
+
+* **Project Name:** Finetune Llama 3.2
+* **Day Number:** 17
+* **Series Name:** 50 Days, 50 AI Agents
+* **Author:** [Md Tanvir Rana](https://github.com/tanviiiiir-r)
+* **Tech Stack:** Python, Unsloth, Transformers, TRL, Google Colab
+* **License:** MIT

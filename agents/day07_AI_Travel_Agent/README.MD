@@ -1,61 +1,78 @@
-## 🛫 AI Travel Agent
-This Streamlit app is an AI-powered travel Agent that generates personalized travel itineraries using OpenAI GPT-4o. It automates the process of researching, planning, and organizing your dream vacation, allowing you to explore exciting destinations with ease.
+# 🛫 AI Travel Agent (Day 07) 💡
 
-### Features
-- Research and discover exciting travel destinations, activities, and accommodations
-- Customize your itinerary based on the number of days you want to travel
-- Utilize the power of GPT-4o to generate intelligent and personalized travel plans
-- Download your itinerary as a calendar (.ics) file to import into Google Calendar, Apple Calendar, or other calendar apps
+## Problem Section 💡
 
-### How to get Started?
+Planning a trip involves researching destinations, activities, accommodations, and organizing schedules, which can be time-consuming and overwhelming. Many travelers struggle to create personalized itineraries without spending hours on the internet. There is a need for an AI solution to simplify travel planning and generate ready-to-use itineraries efficiently.
 
-1. Clone the GitHub repository
+## Solution Section 🚀
+
+The AI Travel Agent uses GPT-4o to generate intelligent, personalized travel itineraries. By combining web research via SerpAPI and AI planning, the system produces detailed daily schedules, suggests activities, dining, and accommodations, and allows users to download their itinerary as a calendar file. A local version using Ollama ensures privacy and offline usage.
+
+## Features ⚙️
+
+* Research and discover travel destinations, activities, and accommodations.
+* Customize itineraries based on travel duration.
+* Generate intelligent, personalized plans using GPT-4o.
+* Download itineraries as .ics calendar files for Google, Apple, or other calendars.
+* Local LLM support with Ollama for offline inference.
+
+## Tech Stack 🧠
+
+* **Frontend:** Streamlit (Python)
+* **AI Models:** GPT-4o, Ollama (local)
+* **Web Research:** SerpAPI
+* **Calendar Integration:** .ics file generation
+* **Environment Management:** API keys via Streamlit sidebar
+
+## Setup Instructions 🧩
+
+### Requirements
+
+* Python 3.10 or higher
+* OpenAI API Key (for cloud version)
+* SerpAPI Key (for web research)
+* Ollama installation (for local version, optional)
+
+### Installation
 
 ```bash
-git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
-cd awesome-llm-apps/ai_agent_tutorials/ai_travel_agent
-```
-2. Install the required dependencies:
-
-```bash
+git clone https://github.com/tanviiiiir-r/50-days-50-ai-agents.git
+cd 50-days-50-ai-agents/agents/day07_AI_Travel_Agent
 pip install -r requirements.txt
 ```
-3. Get your OpenAI API Key
 
-- Sign up for an [OpenAI account](https://platform.openai.com/) (or the LLM provider of your choice) and obtain your API key.
+### Run Instructions
 
-4. Get your SerpAPI Key
+**Cloud Version (OpenAI GPT-4o):**
 
-- Sign up for an [SerpAPI account](https://serpapi.com/) and obtain your API key.
-
-5. Run the Streamlit App
 ```bash
 streamlit run travel_agent.py
 ```
 
-For local LLM usage (with Ollama):
+**Local Version (Ollama):**
+
 ```bash
 streamlit run local_travel_agent.py
 ```
 
-### How it Works?
+## How It Works
 
-The AI Travel Agent has two main components:
-- **Researcher:** Responsible for generating search terms based on the user's destination and travel duration, and searching the web for relevant activities and accommodations using SerpAPI.
-- **Planner:** Takes the research results and user preferences to generate a personalized draft itinerary that includes suggested activities, dining options, and accommodations.
+* **Researcher:** Generates search queries based on user input and retrieves relevant travel info using SerpAPI.
+* **Planner:** Uses AI to create detailed daily itineraries including activities, dining, and accommodations.
+* Calendar download allows importing the itinerary as an all-day event schedule in your preferred calendar app.
 
-### Using the Calendar Download Feature
+## Real-World Use Cases 🧭
 
-After generating your travel itinerary:
-1. Click the "Download Itinerary as Calendar (.ics)" button that appears next to the "Generate Itinerary" button
-2. Save the .ics file to your computer
-3. Import the file into your preferred calendar application (Google Calendar, Apple Calendar, Outlook, etc.)
-4. Each day of your itinerary will appear as an all-day event in your calendar
-5. The complete details for each day's activities are included in the event description
+* Automate trip planning for vacations, business trips, or family travel.
+* Quickly generate ready-to-use, personalized travel schedules.
+* Integrate itineraries with calendars for easy tracking.
+* Enable offline travel planning with local LLM inference.
 
-This feature makes it easy to keep track of your travel plans and have your itinerary available on all your devices, even offline.
+## Repository Info 📁
 
-### Local vs Cloud Version
-
-- **travel_agent.py**: Uses OpenAI's GPT-4o for high-quality itineraries (requires OpenAI API key)
-- **local_travel_agent.py**: Uses Ollama for local LLM inference without sending data to external APIs (requires Ollama to be installed and running)
+* **Project Name:** AI Travel Agent
+* **Day Number:** 07
+* **Series Name:** 50 Days, 50 AI Agents
+* **Author:** [Md Tanvir Rana](https://github.com/tanviiiiir-r/)
+* **Tech Stack:** Streamlit, GPT-4o, Ollama, SerpAPI, Python
+* **License:** MIT

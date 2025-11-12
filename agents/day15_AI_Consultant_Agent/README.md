@@ -1,95 +1,78 @@
-# 🤝 AI Consultant Agent with Google ADK 
+# 🤝 AI Consultant Agent with Google ADK 📊
 
+## 💡 Problem
 
-A powerful business consultant powered by Google's Agent Development Kit that provides comprehensive market analysis, strategic planning, and actionable business recommendations with real-time web research.
+Businesses often struggle to make data-driven strategic decisions due to the lack of real-time market insights, structured analysis, and actionable recommendations. Manual research and planning are time-consuming and prone to errors.
 
+## 🚀 Solution
 
-## Features
+The AI Consultant Agent leverages Google's Agent Development Kit and Gemini 2.5 Flash model to provide comprehensive market analysis, strategic planning, and actionable business recommendations. By integrating real-time web research via Perplexity AI, the agent delivers reliable, up-to-date insights through an interactive Google ADK web interface.
 
-- **Real-time Web Research**: Uses Perplexity AI search for current market data, trends, and competitor intelligence
-- **Market Analysis**: Leverages web search and AI insights to analyze market conditions and opportunities
-- **Strategic Recommendations**: Generates actionable business strategies with timelines and implementation plans
-- **Risk Assessment**: Identifies potential risks and provides mitigation strategies
-- **Interactive UI**: Clean Google ADK web interface for easy consultation
-- **Evaluation System**: Built-in evaluation and debugging capabilities with session tracking
+## ⚙️ Features
 
-## How It Works
+* Real-time web research using Perplexity AI
+* Market condition analysis and competitor intelligence
+* Strategic recommendations with implementation timelines
+* Risk assessment and mitigation strategies
+* Interactive Google ADK interface for user consultation
+* Built-in evaluation, session tracking, and debugging
 
-1. **Input Phase**: User provides business questions or consultation requests through the ADK web interface
-2. **Research Phase**: The agent conducts real-time web research using Perplexity AI to gather current market data
-3. **Analysis Phase**: The agent uses market analysis tools to process the query and generate insights
-4. **Strategy Phase**: Strategic recommendations are generated based on the analysis and web research
-5. **Synthesis Phase**: The agent combines findings into a comprehensive consultation report with citations
-6. **Output Phase**: Actionable recommendations with timelines and implementation steps are presented
+## 🧠 Tech Stack
 
-## Requirements
+* Python 3.8+
+* Google ADK with LlmAgent framework
+* Gemini 2.5 Flash model
+* Perplexity AI for real-time search
+* Streamlit (optional) for interface enhancements
 
-- Python 3.8+
-- Google API key (for Gemini model)
-- Perplexity API key (for real-time web search)
-- Required Python packages (see `requirements.txt`)
+## 🧩 Setup Instructions
 
-## Installation
+### Requirements
 
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
-   cd advanced_ai_agents/single_agent_apps
-   ```
+* Python 3.8 or higher
+* Google API key (Gemini)
+* Perplexity API key
+* Required Python packages
 
-2. Install the required packages:
-   ```bash
-   pip install -r requirements.txt
-   ```
+### Installation
 
-## Usage
+```bash
+# Clone the repository
+git clone https://github.com/tanviiiiir-r/50-days-50-ai-agents.git
+cd 50-days-50-ai-agents/agents/day15_AI_Consultant_Agent
 
-1. Set your API keys:
-   ```bash
-   export GOOGLE_API_KEY=your-google-api-key
-   export PERPLEXITY_API_KEY=your-perplexity-api-key
-   ```
+# Install dependencies
+pip install -r requirements.txt
+```
 
-2. Start the Google ADK web interface:
-   ```bash
-   adk web 
-   ```
+### Environment Setup
 
-3. Open your browser and navigate to `http://localhost:8000`
+```bash
+export GOOGLE_API_KEY='your-google-api-key'
+export PERPLEXITY_API_KEY='your-perplexity-api-key'
+```
 
-4. Select "AI Business Consultant" from the available agents
+### Run Instructions
 
-5. Enter your business questions or consultation requests
+```bash
+adk web
+```
 
-6. Review the comprehensive analysis and strategic recommendations with real-time web data and citations
+Open your browser and navigate to `http://localhost:8000`, select "AI Business Consultant," enter your questions, and receive comprehensive strategic insights.
 
-7. Use the Eval tab to save and evaluate consultation sessions
+## 🧭 Real-World Use Cases
 
-## Example Consultation Topics
+* SaaS startup planning and market analysis
+* Retail business expansion strategy
+* Healthcare technology market opportunities
+* Fintech product positioning and launch strategy
+* Renewable energy market risk assessment
 
-- "I want to launch a SaaS startup for small businesses"
-- "Should I expand my retail business to e-commerce?"
-- "What are the market opportunities in healthcare technology?"
-- "How should I position my new fintech product?"
-- "What are the risks of entering the renewable energy market?"
+## 📁 Repository Info
 
-## Technical Details
-
-The application uses specialized analysis tools:
-
-1. **Perplexity Search Tool**: Conducts real-time web research using Perplexity AI's "sonar" model to gather current market data, competitor information, and industry trends with citations.
-
-2. **Market Analysis Tool**: Processes business queries and generates market insights, competitive analysis, and opportunity identification.
-
-3. **Strategic Recommendations Tool**: Creates actionable business strategies with priority levels, timelines, and implementation roadmaps.
-
-The agent is built on Google ADK's LlmAgent framework using the Gemini 2.5 Flash model, providing fast and accurate business consultation capabilities backed by real-time web research.
-
-## Evaluation and Testing
-
-The agent includes built-in evaluation features:
-
-- **Session Management**: Track consultation history and progress
-- **Test Case Creation**: Save successful consultations as evaluation cases
-- **Performance Metrics**: Monitor tool usage and response quality
-- **Custom Evaluation**: Configure metrics for specific business requirements 
+* **Project Name:** AI Consultant Agent with Google ADK
+* **Day Number:** 15
+* **Series Name:** 50 Days, 50 AI Agents
+* **Author:** [Md Tanvir Rana](https://github.com/tanviiiiir-r)
+* **Tech Stack:** Python, Google ADK, Gemini 2.5 Flash, Perplexity AI
+* **License:** MIT

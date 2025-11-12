@@ -1,40 +1,68 @@
-## 🎬 AI Movie Production Agent
-This Streamlit app is an AI-powered movie production assistant that helps bring your movie ideas to life using Claude 3.5 Sonnet model. It automates the process of script writing and casting, allowing you to create compelling movie concepts with ease.
+# 🎬 AI Movie Production Agent
 
-### Features
-- Generates script outlines based on your movie idea, genre, and target audience
-- Suggests suitable actors for main roles, considering their past performances and current availability
-- Provides a concise movie concept overview
+## 💡 Problem
 
-### How to get Started?
+Creating a compelling movie involves significant effort in scriptwriting, casting, and conceptualization. Independent creators, production teams, and writers often face challenges in organizing ideas, generating engaging scripts, and identifying the right actors for their story.
 
-1. Clone the GitHub repository
+## 🚀 Solution
+
+The AI Movie Production Agent leverages Claude 3.5 Sonnet to automate the scriptwriting and casting process. By breaking down movie ideas into structured outlines, suggesting suitable actors, and providing a concise concept overview, the agent accelerates movie production planning and enables creators to focus on creativity and execution.
+
+## ⚙️ Features
+
+* **Script Generation**: Generates detailed outlines with character descriptions, plot points, and genre-specific elements
+* **Actor Suggestion**: Recommends suitable actors based on past performances, availability, and target audience alignment
+* **Movie Concept Overview**: Provides a clear, concise summary of the proposed movie, facilitating quick understanding and decision-making
+
+## 🧠 Tech Stack
+
+* Python
+* Streamlit (UI)
+* Claude 3.5 Sonnet (AI model)
+* SerpAPI (actor and movie data search)
+
+## 🧩 Setup Instructions
+
+### Requirements
+
+* Python 3.10 or higher
+* Anthropic API key (Claude 3.5 Sonnet)
+* SerpAPI key for web search
+
+### Installation
 
 ```bash
-git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
-cd advanced_ai_agents/single_agent_apps/ai_movie_production_agent
-```
-2. Install the required dependencies:
+# Clone the repository
+git clone https://github.com/tanviiiiir-r/50-days-50-ai-agents.git
+cd 50-days-50-ai-agents/agents/day23_AI_Movie_Production_Agent
 
-```bash
+# Install dependencies
 pip install -r requirements.txt
 ```
-3. Get your Anthropic API Key
 
-- Sign up for an [Anthropic account](https://console.anthropic.com) (or the LLM provider of your choice) and obtain your API key.
+### Run Instructions
 
-4. Get your SerpAPI Key
-
-- Sign up for an [SerpAPI account](https://serpapi.com/) and obtain your API key.
-
-5. Run the Streamlit App
 ```bash
+# Run the Streamlit app
 streamlit run movie_production_agent.py
 ```
 
-### How it Works?
+* Enter your Anthropic and SerpAPI keys when prompted
+* Input your movie idea, genre, and target audience
+* Receive a script outline, actor suggestions, and a concise movie concept overview
 
-The AI Movie Production Agent utilizes three main components:
-- **ScriptWriter**: Develops a compelling script outline with character descriptions and key plot points based on the given movie idea and genre.
-- **CastingDirector**: Suggests suitable actors for the main roles, considering their past performances and current availability.
-- **MovieProducer**: Oversees the entire process, coordinating between the ScriptWriter and CastingDirector, and providing a concise movie concept overview.
+## 🧭 Real-World Use Cases
+
+* Independent filmmakers planning script and casting
+* Screenwriters seeking structured outlines
+* Movie production teams accelerating pre-production planning
+* Creative workshops generating story ideas and cast concepts
+
+## 📁 Repository Info
+
+* **Project Name:** AI Movie Production Agent
+* **Day Number:** 23
+* **Series Name:** 50 Days, 50 AI Agents
+* **Author:** [Md Tanvir Rana](https://github.com/tanviiiiir-r)
+* **Tech Stack:** Python, Streamlit, Claude 3.5 Sonnet, SerpAPI
+* **License:** MIT
