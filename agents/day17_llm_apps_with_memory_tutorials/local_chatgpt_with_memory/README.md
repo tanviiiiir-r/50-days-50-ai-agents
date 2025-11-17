@@ -12,9 +12,8 @@ This Streamlit application implements a fully local ChatGPT-like experience usin
 
 1. Clone the GitHub repository
 ```bash
-git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
-cd awesome-llm-apps/llm_apps_with_memory_tutorials/local_chatgpt_with_memory
-```
+git clone https://github.com/tanviiiiir-r/50-days-50-ai-agents.git
+cd 50-days-50-ai-agents/agents/day17_llm_apps_with_memory_tutorials/local_chatgpt_with_memory
 
 2. Install the required dependencies:
 
