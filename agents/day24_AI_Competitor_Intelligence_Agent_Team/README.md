@@ -1,77 +1,145 @@
 # 🧲 AI Competitor Intelligence Agent Team
 
-The AI Competitor Intelligence Agent Team is a powerful competitor analysis tool powered by Firecrawl and Agno's AI Agent framework. This app helps businesses analyze their competitors by extracting structured data from competitor websites and generating actionable insights using AI.
+A powerful, multi-agent competitive intelligence system that automatically crawls competitor websites, discovers similar companies, and produces structured, actionable business insights.
 
-## Features
+---
 
-- **Multi-Agent System**
-    - **Firecrawl Agent**: Specializes in crawling and summarizing competitor websites
-    - **Analysis Agent**: Generates detailed competitive analysis reports
-    - **Comparison Agent**: Creates structured comparisons between competitors
+## 💡 Problem
 
-- **Competitor Discovery**:
-  - Finds similar companies using URL matching with Exa AI 
-  - Discovers competitors based on business descriptions
-  - Automatically extracts relevant competitor URLs
+Businesses often struggle to understand their competitive landscape. Manual research is slow, scattered, and frequently outdated. Companies need a faster way to:
 
-- **Comprehensive Analysis**:
-  - Provides structured analysis reports with:
-    - Market gaps and opportunities
-    - Competitor weaknesses
-    - Recommended features
-    - Pricing strategies
-    - Growth opportunities
-    - Actionable recommendations
+* Identify emerging competitors
+* Understand competitor strengths, weaknesses, and pricing models
+* Spot market gaps and growth opportunities
+* Receive data-driven strategic recommendations
 
-- **Interactive Analysis**: Users can input either their company URL or description for analysis
+Traditional competitive analysis requires hours or days of effort — this AI agent solves that.
 
-## Requirements
+---
 
-The application requires the following Python libraries:
+## 🚀 Solution
 
-- `agno`
-- `exa-py`
-- `streamlit`
-- `pandas`
-- `firecrawl-py`
+The **AI Competitor Intelligence Agent Team** automates the entire competitive analysis workflow using a coordinated team of AI agents. By combining Firecrawl’s web extraction capabilities with intelligent analysis models, it:
 
-You'll also need API keys for:
-- OpenAI
-- Firecrawl
-- Exa
+* Crawls competitor websites
+* Extracts structured business data
+* Discovers related companies
+* Generates comprehensive AI-driven competitive reports
+* Produces actionable recommendations for product, pricing, and growth
 
-## How to Run
+This creates a real-time, automated competitor intelligence system.
 
-Follow these steps to set up and run the application:
+---
 
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
-   cd advanced_ai_agents/multi_agent_apps/agent_teams/ai_competitor_intelligence_agent_team
-   ```
+## ⚙️ Features
 
-2. **Install the dependencies**:
-    ```bash
-    pip install -r requirements.txt
-    ```
+### 🔎 Multi-Agent Architecture
 
-3. **Set up your API keys**:
-    - Get an OpenAI API key from: https://platform.openai.com/api-keys
-    - Get a Firecrawl API key from: [Firecrawl website](https://www.firecrawl.dev/app/api-keys)
-    - Get an Exa API key from: [Exa website](https://dashboard.exa.ai/api-keys)
+* **Firecrawl Agent** — Crawls competitor URLs and extracts structured content
+* **Analysis Agent** — Generates detailed competitive intelligence reports
+* **Comparison Agent** — Creates structured side-by-side competitor comparisons
 
-4. **Run the Streamlit app**:
-    ```bash
-    streamlit run ai_competitor_analyser.py
-    ```
+### 🧭 Competitor Discovery
 
-## Usage
+* Uses **Exa AI** for URL-based similarity search
+* Accepts business descriptions to discover unknown competitors
+* Automatically extracts valid competitor URLs
 
-1. Enter your API keys in the sidebar
-2. Input either:
-   - Your company's website URL
-   - A description of your company
-3. Click "Analyze Competitors" to generate:
-   - Competitor comparison table
-   - Detailed analysis report
-   - Strategic recommendations
+### 📊 Comprehensive Analysis Reports
+
+* Market gaps & opportunities
+* Competitor weaknesses
+* New feature recommendations
+* Pricing/model breakdowns
+* Growth and market-entry strategies
+* Actionable business recommendations
+
+### 🖥️ Interactive UI
+
+* Built with **Streamlit** for smooth user interaction
+* Accepts either company URL **or** business description
+
+---
+
+## 🧠 Tech Stack
+
+* **Python 3.10+**
+* **Firecrawl** (web crawling & extraction)
+* **Agno AI Agent Framework**
+* **Exa AI** (competitor discovery)
+* **OpenAI API** (analysis & reasoning)
+* **Streamlit** (frontend)
+* **Pandas** (data handling)
+
+---
+
+## 🧩 Setup Instructions
+
+### ✔️ Requirements
+
+You will need API keys for:
+
+* OpenAI
+* Firecrawl
+* Exa AI
+
+Also ensure you have:
+
+* Python 3.10+
+* pip package manager
+
+### 📥 Installation
+
+Clone the official series repository:
+
+```bash
+git clone https://github.com/tanviiiiir-r/50-days-50-ai-agents.git
+cd 50-days-50-ai-agents/agents/dayXX_ai_competitor_intelligence_agent
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+### 🔐 Set Environment Variables
+
+Create a `.env` file or export manually:
+
+```
+OPENAI_API_KEY=your_key
+FIRECRAWL_API_KEY=your_key
+EXA_API_KEY=your_key
+```
+
+### ▶️ Run the App
+
+```bash
+streamlit run ai_competitor_analyser.py
+```
+
+---
+
+## 🧭 Real-World Use Cases
+
+* **Startup market exploration** → Identify all active competitors before launching
+* **Product strategy teams** → Understand gaps and decide what to build next
+* **Investor research** → Compare companies during due diligence
+* **Marketing teams** → Analyze competitor positioning & pricing
+* **SaaS companies** → Automate monthly competitor tracking
+
+---
+
+## 📁 Repository Info
+
+* **Project Name:** AI Competitor Intelligence Agent Team
+* **Day Number:** XX
+* **Series:** 50 Days, 50 AI Agents
+* **Author:** [Md Tanvir Rana](https://github.com/tanviiiiir-r)
+* **Tech Stack:** Python, Streamlit, Firecrawl, Exa AI, OpenAI, Agno Framework
+* **License:** MIT
+
+---
+
+Ready to automate your competitive intelligence and stay ahead in the market!

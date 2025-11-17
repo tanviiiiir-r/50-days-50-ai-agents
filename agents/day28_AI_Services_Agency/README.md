@@ -1,80 +1,129 @@
-# AI Services Agency 👨‍💼
+# 🧠 AI Services Agency
 
-An AI application that simulates a full-service digital agency using multiple AI agents to analyze and plan software projects. Each agent represents a different role in the project lifecycle, from strategic planning to technical implementation.
+## 💡 Problem
 
-## Demo: 
+Building software is complex. Startups often need strategic guidance, technical architecture, product planning, development direction, and go‑to‑market support — all at once. But hiring a full team is expensive and slow.
 
-https://github.com/user-attachments/assets/a0befa3a-f4c3-400d-9790-4b9e37254405
+## 🚀 Solution
 
-## Features
+The **AI Services Agency** simulates a complete digital agency using multiple specialized AI agents. Each agent plays a real-world role — CEO, CTO, Product Manager, Developer, and Client Success — collaborating asynchronously to analyze your startup idea and generate a complete, end‑to‑end project plan.
 
-### Five specialized AI agents 
+This system acts like an on‑demand agency that can:
 
-- **CEO Agent**: Strategic leader and final decision maker
-  - Analyzes startup ideas using structured evaluation
-  - Makes strategic decisions across product, technical, marketing, and financial domains
-  - Uses AnalyzeStartupTool and MakeStrategicDecision tools
+* Evaluate your startup idea
+* Generate technical architecture & feasibility analysis
+* Create a product roadmap
+* Estimate development timelines & costs
+* Plan marketing & go‑to‑market strategy
+* Provide coordinated, multi-agent recommendations
 
-- **CTO Agent**: Technical architecture and feasibility expert
-  - Evaluates technical requirements and feasibility
-  - Provides architecture decisions
-  - Uses QueryTechnicalRequirements and EvaluateTechnicalFeasibility tools
+A full agency — but fully automated.
 
-- **Product Manager Agent**: Product strategy specialist
-  - Defines product strategy and roadmap
-  - Coordinates between technical and marketing teams
-  - Focuses on product-market fit
+---
 
-- **Developer Agent**: Technical implementation expert
-  - Provides detailed technical implementation guidance
-  - Suggests optimal tech stack and cloud solutions
-  - Estimates development costs and timelines
+## 🏗️ Multi‑Agent Team
 
-- **Client Success Agent**: Marketing strategy leader
-  - Develops go-to-market strategies
-  - Plans customer acquisition approaches
-  - Coordinates with product team
+### 👨‍💼 CEO Agent — *Strategic Leader*
 
-### Custom Tools
+* Evaluates startup potential using structured frameworks
+* Makes final product, tech, financial, and marketing decisions
+* Uses **AnalyzeStartupTool** & **MakeStrategicDecision**
 
-The agency uses specialized tools built with OpenAI Schema for structured analysis:
-- **Analysis Tools**: AnalyzeProjectRequirements for market evaluation and analysis of startup idea
-- **Technical Tools**: CreateTechnicalSpecification for technical assessment
+### 🛠️ CTO Agent — *Technical Architect*
 
-### 🔄 Asynchronous Communication
+* Analyzes technical requirements
+* Designs architecture & core components
+* Uses **QueryTechnicalRequirements** & **EvaluateTechnicalFeasibility**
 
-The agency operates in async mode, enabling:
-- Parallel processing of analyses from different agents
-- Efficient multi-agent collaboration
-- Real-time communication between agents
-- Non-blocking operations for better performance
+### 🧭 Product Manager Agent — *Product Strategist*
 
-### 🔗 Agent Communication Flows
-- CEO ↔️ All Agents (Strategic Oversight)
-- CTO ↔️ Developer (Technical Implementation)
-- Product Manager ↔️ Marketing Manager (Go-to-Market Strategy)
-- Product Manager ↔️ Developer (Feature Implementation)
-- (and more!)
+* Creates product strategy & roadmap
+* Defines MVP and feature progression
+* Bridges between technical & marketing teams
 
-## How to Run
+### 👨‍💻 Developer Agent — *Implementation Expert*
 
-Follow the steps below to set up and run the application:
-Before anything else, Please get your OpenAI API Key here: https://platform.openai.com/api-keys
+* Suggests tech stack, frameworks, APIs, and cloud setup
+* Creates implementation-level detail
+* Generates cost & timeline estimates
 
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
-   cd advanced_ai_agents/multi_agent_apps/agent_teams/ai_services_agency
-   ```
+### 📣 Client Success Agent — *Marketing & Growth Lead*
 
-2. **Install the dependencies**:
-    ```bash
-    pip install -r requirements.txt
-    ```
+* Designs go-to-market strategies
+* Maps customer acquisition channels
+* Works with PM on feature–market alignment
 
-3. **Run the Streamlit app**:
-    ```bash
-    streamlit run agency.py
-    ```
+---
 
-4. **Enter your OpenAI API Key** in the sidebar when prompted and start analyzing your startup idea!
+## 🛠️ Custom Tools
+
+The AI Services Agency uses OpenAI Schema tools for structured reasoning:
+
+### 🔍 **Analysis Tools**
+
+* `AnalyzeProjectRequirements` — Market, competitors, risks
+* `AnalyzeStartupIdea` — Opportunity score, business viability
+
+### ⚙️ **Technical Tools**
+
+* `CreateTechnicalSpecification` — Architecture, data models, integrations
+
+These tools allow agents to share structured outputs instead of plain text.
+
+---
+
+## 🔄 Asynchronous Multi-Agent Collaboration
+
+The system runs all agents **in parallel** using async mode:
+
+* Faster responses
+* Real-time agent discussions
+* Efficient collaboration
+* Non‑blocking tool usage
+
+### 🔗 Agent Communication Map
+
+* **CEO ↔️ All agents** (oversight)
+* **CTO ↔️ Developer** (technical planning)
+* **PM ↔️ Marketing** (GTM strategy)
+* **PM ↔️ Developer** (feature implementation)
+
+---
+
+## ▶️ Demo
+
+https: //github.com/user-attachments/assets/a0befa3a-f4c3-400d-9790-4b9e37254405
+
+---
+
+## 🧪 How to Run
+
+### 1️⃣ Clone the Repo
+
+```bash
+git clone https://github.com/tanviiiiir-r/50-days-50-ai-agents.git
+cd 50-days-50-ai-agents/agents/dayXX_Ai_Services_Agency
+```
+
+### 2️⃣ Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3️⃣ Run the Streamlit App
+
+```bash
+streamlit run agency.py
+```
+
+### 4️⃣ Enter Your OpenAI API Key
+
+Get your key here:
+https: //platform.openai.com/api-keys
+
+Then paste it into the sidebar — your personal AI agency will start evaluating your startup idea immediately.
+
+---
+
+Want this transformed into a **complete GitHub project**, **video demo script**, or **architecture diagram**? I can add them instantly.

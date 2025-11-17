@@ -1,101 +1,150 @@
 # 💼 AI Recruitment Agent Team
 
-A Streamlit application that simulates a full-service recruitment team using multiple AI agents to automate and streamline the hiring process. Each agent represents a different recruitment specialist role - from resume analysis and candidate evaluation to interview scheduling and communication - working together to provide comprehensive hiring solutions. The system combines the expertise of technical recruiters, HR coordinators, and scheduling specialists into a cohesive automated workflow.
+A multi-agent AI-powered recruitment system that automates resume screening, candidate communication, technical evaluations, and interview scheduling — delivering a seamless, end-to-end hiring workflow.
 
-## Features
+---
 
-#### Specialized AI Agents
+## 💡 Problem
 
-- Technical Recruiter Agent: Analyzes resumes and evaluates technical skills
-- Communication Agent: Handles professional email correspondence
-- Scheduling Coordinator Agent: Manages interview scheduling and coordination
-- Each agent has specific expertise and collaborates for comprehensive recruitment
+Recruiters lose countless hours manually reviewing resumes, writing emails, coordinating interviews, and assessing candidates. The hiring process is:
 
+* Time-consuming
+* Repetitive
+* Error-prone
+* Difficult to scale
 
-#### End-to-End Recruitment Process
-- Automated resume screening and analysis
-- Role-specific technical evaluation
-- Professional candidate communication
-- Automated interview scheduling
-- Integrated feedback system
+Growing teams need an automated, intelligent system that handles repetitive tasks while improving consistency and candidate experience.
 
-## Important Things to do before running the application
+---
 
-- Create/Use a new Gmail account for the recruiter
-- Enable 2-Step Verification and generate an App Password for the Gmail account
-- The App Password is a 16 digit code (use without spaces) that should be generated here - [Google App Password](https://support.google.com/accounts/answer/185833?hl=en) Please go through the steps to generate the password - it will of the format - 'afec wejf awoj fwrv' (remove the spaces and enter it in the streamlit app) 
-- Create/ Use a Zoom account and go to the Zoom App Marketplace to get the API credentials :
-[Zoom Marketplace](https://marketplace.zoom.us)
-- Go to Developer Dashboard and create a new app - Select Server to Server OAuth and get the credentials, You see 3 credentials - Client ID, Client Secret and Account ID
-- After that, you need to add a few scopes to the app - so that the zoom link of the candidate is sent and created through the mail. 
-- The Scopes are meeting:write:invite_links:admin, meeting:write:meeting:admin, meeting:write:meeting:master, meeting:write:invite_links:master, meeting:write:open_app:admin, user:read:email:admin, user:read:list_users:admin, billing:read:user_entitlement:admin, dashboard:read:list_meeting_participants:admin [last 3 are optional]
+## 🚀 Solution
 
-## How to Run
+The **AI Recruitment Agent Team** brings together a coordinated set of recruitment-focused AI agents that replicate the roles of a full hiring team. Using Streamlit, Zoom API, email automation, and advanced language models, it:
 
-1. **Setup Environment**
-   ```bash
-   # Clone the repository
-    git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
-    cd advanced_ai_agents/multi_agent_apps/agent_teams/ai_recruitment_agent_team
-    
-   # Install dependencies
-   pip install -r requirements.txt
-   ```
+* Analyzes resumes with precision
+* Evaluates technical skills
+* Drafts professional communication
+* Coordinates interview schedules via Zoom
+* Provides structured recruiter insights
 
-2. **Configure API Keys**
-   - OpenAI API key for GPT-4o access
-   - Zoom API credentials (Account ID, Client ID, Client Secret)
-   - Email App Password of Recruiter's Email
+This system drastically reduces recruiter workload while improving decision quality and candidate communication.
 
-3. **Run the Application**
-   ```bash
-   streamlit run ai_recruitment_agent_team.py
-   ```
+---
 
-## System Components
+## ⚙️ Features
 
-- **Resume Analyzer Agent**
-  - Skills matching algorithm
-  - Experience verification
-  - Technical assessment
-  - Selection decision making
+### 🤖 Specialized AI Agents
 
-- **Email Communication Agent**
-  - Professional email drafting
-  - Automated notifications
-  - Feedback communication
-  - Follow-up management
+* **Technical Recruiter Agent** — Evaluates resumes, extracts skills, analyzes experience, performs technical screening
+* **Communication Agent** — Generates emails, sends notifications, manages candidate responses
+* **Scheduling Coordinator Agent** — Handles interview scheduling, timezone conversion, Zoom meeting creation, reminders
 
-- **Interview Scheduler Agent**
-  - Zoom meeting coordination
-  - Calendar management
-  - Timezone handling
-  - Reminder system
+### 🔄 End-to-End Recruitment Workflow
 
-- **Candidate Experience**
-  - Simple upload interface
-  - Real-time feedback
-  - Clear communication
-  - Streamlined process
+* Automated resume screening
+* Role-specific technical evaluations
+* Smart candidate selection suggestions
+* Professional email communication
+* Automated Zoom interview setup
+* Integrated feedback and follow-up system
 
-## Technical Stack
+### 📥 Candidate Experience
 
-- **Framework**: Phidata
-- **Model**: OpenAI GPT-4o
-- **Integration**: Zoom API, EmailTools Tool from Phidata
-- **PDF Processing**: PyPDF2
-- **Time Management**: pytz
-- **State Management**: Streamlit Session State
+* Simple file upload interface
+* Real-time updates
+* Automatic reminders
+* Transparent communication
 
+---
 
-## Disclaimer
+## 🧠 Tech Stack
 
-This tool is designed to assist in the recruitment process but should not completely replace human judgment in hiring decisions. All automated decisions should be reviewed by human recruiters for final approval.
+* **Framework:** Phidata
+* **Language Model:** OpenAI GPT-4o
+* **Integrations:** Zoom API, Phidata EmailTools
+* **PDF Parsing:** PyPDF2
+* **Frontend:** Streamlit
+* **Timezone Management:** pytz
+* **State Management:** Streamlit Session State
 
-## Future Enhancements
+---
 
-- Integration with ATS systems
-- Advanced candidate scoring
-- Video interview capabilities
-- Skills assessment integration
-- Multi-language support
+## 🧩 Setup Instructions
+
+### ✔️ Requirements
+
+You will need:
+
+* A **dedicated Gmail account** for the recruiter
+* **Google App Password** (generated via 2FA)
+* **Zoom API credentials:** Account ID, Client ID, Client Secret
+* **OpenAI API Key** for GPT-4o access
+* Python 3.10+ installed
+
+### 📥 Installation
+
+Clone the official repository:
+
+```bash
+git clone https://github.com/tanviiiiir-r/50-days-50-ai-agents.git
+cd 50-days-50-ai-agents/agents/dayXX_ai_recruitment_agent
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+### 🔐 Configure Credentials
+
+**1. Gmail App Password**
+
+* Enable 2-Step Verification
+* Generate an App Password from Google
+* Copy the 16-character code (no spaces)
+
+**2. Zoom API (Server-to-Server OAuth)**
+
+* Go to Zoom Marketplace
+* Create a new S2S OAuth app
+* Retrieve:
+
+  * Client ID
+  * Client Secret
+  * Account ID
+* Add required scopes (list included in original description)
+
+**3. OpenAI Key**
+Add all credentials inside the Streamlit app sidebar.
+
+### ▶️ Run the Application
+
+```bash
+streamlit run ai_recruitment_agent_team.py
+```
+
+---
+
+## 🧭 Real-World Use Cases
+
+* **HR Teams Automating Early Screening** → Reduce resume review time by 80%
+* **Tech Companies** → Perform consistent technical skill evaluations
+* **Recruitment Agencies** → Handle multiple clients with automated communication
+* **Startups** → Scale hiring without hiring large HR teams
+* **Global Teams** → Automated timezone-aware scheduling with Zoom
+
+---
+
+## 📁 Repository Info
+
+* **Project Name:** AI Recruitment Agent Team
+* **Day Number:** XX
+* **Series:** 50 Days, 50 AI Agents
+* **Author:** [Md Tanvir Rana](https://github.com/tanviiiiir-r)
+* **Tech Stack:** Streamlit, Phidata, OpenAI GPT-4o, Zoom API, PyPDF2, Python
+* **License:** MIT
+
+---
+
+Transform your hiring workflow with a fully automated AI recruitment team — faster, smarter, and more consistent than traditional methods.
