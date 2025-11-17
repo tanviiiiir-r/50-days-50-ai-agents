@@ -1,69 +1,90 @@
-# 🎧 Self-Guided AI Audio Tour Agent
+# Self-Guided AI Audio Tour Agent 🎧🤖
 
-A conversational voice agent system that generates immersive, self-guided audio tours based on the user’s **location**, **areas of interest**, and **tour duration**. Built on a multi-agent architecture using OpenAI Agents SDK, real-time information retrieval, and expressive TTS for natural speech output.
+## Problem 💡
 
----
+Tourists and explorers often miss out on local history, architecture, culture, and cuisine because static guides are generic and do not adapt to real-time context or personal interests. Current audio tours lack personalization, dynamic pacing, and expressive storytelling, making it hard for users to enjoy immersive, self-guided experiences.
 
-## 🚀 Features
+This agent exists to provide an interactive, location-aware audio tour experience that adapts to individual interests and tour durations, delivering rich narratives and high-quality speech in real-time.
 
-### 🎙️ Multi-Agent Architecture
+## Solution 🚀
 
-- **Orchestrator Agent**  
-  Coordinates the overall tour flow, manages transitions, and assembles content from all expert agents.
+The **Self-Guided AI Audio Tour Agent** is a conversational multi-agent system built with OpenAI Agents SDK. Each specialized agent contributes content in its domain, coordinated by the Orchestrator Agent, to produce an immersive, seamless audio tour:
 
-- **History Agent**  
-  Delivers insightful historical narratives with an authoritative voice.
+* **Orchestrator Agent**: Manages tour flow, transitions, and content integration from all expert agents.
+* **History Agent**: Delivers engaging historical narratives.
+* **Architecture Agent**: Highlights architectural details and design elements.
+* **Culture Agent**: Explains local customs, traditions, and arts.
+* **Culinary Agent**: Describes iconic dishes and food culture.
 
-- **Architecture Agent**  
-  Highlights architectural details, styles, and design elements using a descriptive and technical tone.
+The system integrates real-time web searches, adapts to user location and interests, and outputs expressive audio using GPT-4o Mini Audio.
 
-- **Culture Agent**  
-  Explores local customs, traditions, and artistic heritage with an enthusiastic voice.
+## Features ⚙️
 
-- **Culinary Agent**  
-  Describes iconic dishes and food culture in a passionate and engaging tone.
+* Multi-agent architecture with coordinated content generation
+* Location-aware tour personalization
+* Real-time web search for up-to-date information
+* Selectable tour durations (15, 30, 60 minutes) with proportionate content pacing
+* Expressive text-to-speech output via GPT-4o Mini Audio
+* User-focused, immersive storytelling for history, architecture, culture, and cuisine
 
----
+## Tech Stack 🧠
 
-### 📍 Location-Aware Content Generation
+* Python 3.10+
+* Streamlit (web interface)
+* OpenAI Agents SDK
+* GPT-4o Mini Audio (TTS)
+* Web search integration for real-time information
+* Standard Python libraries: `requests`, `dotenv`
 
-- Dynamic content generation based on user-input **location**
-- Real-time **web search integration** to fetch relevant, up-to-date details
-- Personalized content delivery filtered by user **interest categories**
+## Setup Instructions 🧩
 
----
+### Requirements
 
-### ⏱️ Customizable Tour Duration
+* Python 3.10+
+* pip
+* OpenAI API key (for LLM and audio TTS)
+* Optional: virtual environment
 
-- Selectable tour length: **15, 30, or 60 minutes**
-- Time allocations adapt to user interest weights and location relevance
-- Ensures well-paced and proportioned narratives across sections
-
----
-
-### 🔊 Expressive Speech Output
-
-- High-quality audio generated using **Gpt-4o Mini Audio**
-
-### How to get Started?
-
-1. Clone the GitHub repository
+### Installation
 
 ```bash
-git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
-cd ai_agent_tutorials/ai_audio_tour_agent
-```
-2. Install the required dependencies:
+# Clone the repository
+git clone https://github.com/tanviiiiir-r/50-days-50-ai-agents.git
+cd 50-days-50-ai-agents/agents/day32_AI_Audio_Tour_Agent
 
-```bash
+# Optional: create and activate a virtual environment
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+
+# Install dependencies
 pip install -r requirements.txt
 ```
-3. Get your OpenAI API Key
 
-- Sign up for an [OpenAI account](https://platform.openai.com/) (or the LLM provider of your choice) and obtain your API key.
+### Run instructions
 
-4. Run the Streamlit App
 ```bash
 streamlit run ai_audio_tour_agent.py
 ```
 
+### Usage
+
+* Enter your OpenAI API key in the sidebar
+* Specify your location and areas of interest
+* Select desired tour duration (15, 30, or 60 minutes)
+* Start the tour and listen to dynamically generated, expressive audio content
+
+## Real-World Use Cases 🧭
+
+* **Tourists and travelers**: Experience self-guided, personalized tours at their own pace
+* **Museums and cultural sites**: Provide dynamic, adaptive audio guides to visitors
+* **City tour operators**: Enhance offerings with automated, customizable audio tours
+* **Language learners**: Explore real-world locations while listening to engaging content
+
+## Repository Info 📁
+
+* **Project Name:** Self-Guided AI Audio Tour Agent
+* **Day Number:** Day 32
+* **Series Name:** 50 Days, 50 AI Agents
+* **Author:** [Md Tanvir Rana](https://github.com/tanviiiiir-r)
+* **Tech Stack:** Python, Streamlit, OpenAI Agents SDK, GPT-4o Mini Audio, Web search
+* **License:** MIT

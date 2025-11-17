@@ -1,30 +1,46 @@
-# 🤖 AutoRAG: Autonomous RAG with GPT-4o and Vector Database
-This Streamlit application implements an Autonomous Retrieval-Augmented Generation (RAG) system using OpenAI's GPT-4o model and PgVector database. It allows users to upload PDF documents, add them to a knowledge base, and query the AI assistant with context from both the knowledge base and web searches.
-Features
+# 🤖 AutoRAG: Autonomous RAG with GPT-4o and Vector Database 🧠
 
-### Freatures 
-- Chat interface for interacting with the AI assistant
-- PDF document upload and processing
-- Knowledge base integration using PostgreSQL and Pgvector
-- Web search capability using DuckDuckGo
-- Persistent storage of assistant data and conversations
+## 💡 Problem
 
-### How to get Started?
+Many AI assistants cannot autonomously retrieve, integrate, and reason over user documents combined with web sources. Existing RAG systems often require manual setup and lack a unified interface for knowledge base and web search integration.
 
-1. Clone the GitHub repository
+## 🚀 Solution
+
+**AutoRAG** is an autonomous RAG system that allows users to upload PDF documents, add them to a persistent knowledge base, and query an AI assistant powered by GPT-4o. The system integrates web search with DuckDuckGo and stores conversation history for seamless, context-aware interactions.
+
+## ⚙️ Features
+
+* **Chat Interface**: Interact with the AI assistant naturally.
+* **PDF Upload & Processing**: Add documents to the knowledge base for AI reference.
+* **Knowledge Base Integration**: PostgreSQL with PgVector for efficient vector storage and retrieval.
+* **Web Search Capability**: DuckDuckGo integration for real-time information.
+* **Persistent Storage**: Conversations and assistant data are saved for future reference.
+
+## 🧠 Tech Stack
+
+* GPT-4o (OpenAI large language model)
+* PostgreSQL with PgVector (Vector database)
+* Streamlit (Web app interface)
+* DuckDuckGo search API
+* Python (Backend scripting and orchestration)
+
+## 🧩 Setup Instructions
+
+### Requirements
+
+* Python 3.8+
+* Docker (for PgVector)
+* OpenAI API key
+
+### Installation
+
 ```bash
-git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
-cd awesome-llm-apps/rag_tutorials/autonomous_rag
-```
-
-2. Install the required dependencies:
-
-```bash
+git clone https://github.com/tanviiiiir-r/50-days-50-ai-agents.git
+cd 50-days-50-ai-agents/agents/day41_Autonomous_RAG
 pip install -r requirements.txt
 ```
 
-3. Ensure PgVector Database is running:
-The app expects PgVector to be running on [localhost:5532](http://localhost:5532/). Adjust the configuration in the code if your setup is different.
+### Running PgVector
 
 ```bash
 docker run -d \
@@ -38,7 +54,24 @@ docker run -d \
   phidata/pgvector:16
 ```
 
-4. Run the Streamlit App
+### Running the App
+
 ```bash
 streamlit run autorag.py
 ```
+
+## 🧭 Real-World Use Cases
+
+* Research assistants that query both local PDFs and web sources.
+* Corporate knowledge management systems with searchable internal documentation.
+* Legal or compliance teams referencing multiple documents and external regulations.
+* Educational platforms that provide AI-guided learning from uploaded materials.
+
+## 📁 Repository Info
+
+* **Project Name**: AutoRAG: Autonomous RAG
+* **Day Number**: 41
+* **Series Name**: 50 Days, 50 AI Agents
+* **Author**: [Md Tanvir Rana](https://github.com/tanviiiiir-r)
+* **Tech Stack**: GPT-4o, PostgreSQL + PgVector, Streamlit, DuckDuckGo API
+* **License**: MIT

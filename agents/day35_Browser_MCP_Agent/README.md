@@ -1,90 +1,102 @@
-# 🌐 Browser MCP Agent
+# Browser MCP Agent 🌐🤖
 
-https://github.com/user-attachments/assets/a01e09fa-131b-479a-8df3-2d1a61fd80f3
+## Problem 💡
 
-A Streamlit application that allows you to browse and interact with websites using natural language commands through the Model Context Protocol (MCP) and [MCP-Agent](https://github.com/lastmile-ai/mcp-agent) with Playwright integration.
+Navigating websites programmatically typically requires coding skills or complex automation scripts. Users struggle to complete multi-step browsing tasks or extract information quickly using traditional tools. There is also limited support for voice or natural language-based web interactions.
 
-## Features
+The **Browser MCP Agent** solves this problem by enabling users to control a browser using natural language commands, interact with web elements, extract content, and complete complex tasks without writing code.
 
-- **Natural Language Interface**: Control a browser with simple English commands
-- **Full Browser Navigation**: Visit websites and navigate through pages
-- **Interactive Elements**: Click buttons, fill forms, and scroll through content
-- **Visual Feedback**: Take screenshots of webpage elements
-- **Information Extraction**: Extract and summarize content from webpages
-- **Multi-step Tasks**: Complete complex browsing sequences through conversation
+## Solution 🚀
 
-## Setup
+This Streamlit application leverages **Model Context Protocol (MCP)**, **MCP-Agent**, and **Playwright** to allow natural language-driven web automation:
+
+* **Natural Language Interface:** Execute browsing commands in plain English.
+* **Full Browser Navigation:** Navigate websites, click links, and go back/forward.
+* **Interactive Elements:** Fill forms, click buttons, scroll, and complete multi-step tasks.
+* **Visual Feedback:** Capture screenshots of web elements or sections.
+* **Information Extraction:** Summarize page content or extract specific components.
+
+Users interact through a Streamlit interface, receiving real-time results and screenshots while completing sophisticated browsing workflows.
+
+## Features ⚙️
+
+* Natural language control for browser navigation and interaction
+* Multi-step task execution via conversation
+* Form filling, button clicks, and scrolling automation
+* Webpage screenshots for visual confirmation
+* Content extraction and summarization
+* Streamlit interface with live results
+* OpenAI or Anthropic API integration for LLM-driven command interpretation
+
+## Tech Stack 🧠
+
+* Python 3.8+
+* Streamlit (UI)
+* MCP (Model Context Protocol)
+* MCP-Agent (Agentic Framework)
+* Playwright (browser automation)
+* OpenAI / Anthropic API
+* Node.js and npm (required by Playwright)
+
+## Setup Instructions 🧩
 
 ### Requirements
 
-- Python 3.8+
-- Node.js and npm (for Playwright)
-  - This is a critical requirement! The app uses Playwright to control a headless browser
-  - Download and install from [nodejs.org](https://nodejs.org/)
-- OpenAI or Anthropic API Key
+* Python 3.8+
+* Node.js and npm
+* OpenAI or Anthropic API Key
 
 ### Installation
 
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
-   cd mcp_ai_agents/browser_mcp_agent
-   ```
+```bash
+# Clone repository
+git clone https://github.com/tanviiiiir-r/50-days-50-ai-agents.git
+cd 50-days-50-ai-agents/agents/day35_Browser_MCP_Agent
+# Install dependencies
+pip install -r requirements.txt
 
-2. Install the required Python packages:
-   ```bash
-   pip install -r requirements.txt
-   ```
+# Verify Node.js and npm
+node --version
+npm --version
+```
 
-3. Verify Node.js and npm are installed:
-   ```bash
-   node --version
-   npm --version
-   ```
-   Both commands should return version numbers. If they don't, please install Node.js.
+### Configure API Key
 
-4. Set up your API keys:
-   - Set OpenAI API Key as an environment variable:
-     ```bash
-     export OPENAI_API_KEY=your-openai-api-key
-     ```
+```bash
+export OPENAI_API_KEY='your-openai-api-key'
+```
 
+### Run instructions
 
-### Running the App
+```bash
+streamlit run main.py
+```
 
-1. Start the Streamlit app:
-   ```bash
-   streamlit run main.py
-   ```
+### Usage
 
-2. In the app interface:
-   - Enter your browsing command
-   - Click "Run Command"
-   - View the results and screenshots
+* Enter natural language commands in the Streamlit interface
+* Commands can include navigation, interaction, content extraction, and multi-step sequences
+* View results and screenshots in real time
 
 ### Example Commands
 
-#### Basic Navigation
-- "Go to www.mcp-agent.com"
-- "Go back to the previous page"
+* Navigation: "Go to [www.mcp-agent.com](http://www.mcp-agent.com)", "Go back to the previous page"
+* Interaction: "Click on the login button", "Scroll down to see more content"
+* Content Extraction: "Summarize the main content of this page", "Extract navigation menu items", "Take a screenshot of the hero section"
+* Multi-step Tasks: "Go to the blog, find the most recent article, and summarize its key points"
 
-#### Interaction
-- "Click on the login button"
-- "Scroll down to see more content"
+## Real-World Use Cases 🧭
 
-#### Content Extraction
-- "Summarize the main content of this page"
-- "Extract the navigation menu items"
-- "Take a screenshot of the hero section"
+* Automate website data extraction for research or analytics
+* Summarize competitor content quickly
+* Automate repetitive web tasks such as form submission or navigation
+* Build demos or prototypes using conversational web control
 
-#### Multi-step Tasks
-- "Go to the blog, find the most recent article, and summarize its key points"
+## Repository Info 📁
 
-## Architecture
-
-The application uses:
-- Streamlit for the user interface
-- MCP (Model Context Protocol) to connect the LLM with tools
-- Playwright for browser automation
-- [MCP-Agent](https://github.com/lastmile-ai/mcp-agent/) for the Agentic Framework
-- OpenAI's models to interpret commands and generate responses
+* **Project Name:** Browser MCP Agent
+* **Day Number:** Day 35
+* **Series Name:** 50 Days, 50 AI Agents
+* **Author:** [Md Tanvir Rana](https://github.com/tanviiiiir-r)
+* **Tech Stack:** Python, Streamlit, MCP, MCP-Agent, Playwright, OpenAI/Anthropic, Node.js
+* **License:** MIT

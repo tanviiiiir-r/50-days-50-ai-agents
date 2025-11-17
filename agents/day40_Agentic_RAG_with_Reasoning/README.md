@@ -1,105 +1,83 @@
-# 🧐 Agentic RAG with Reasoning
-A sophisticated RAG system that demonstrates an AI agent's step-by-step reasoning process using Agno, Gemini and OpenAI. This implementation allows users to add web sources, ask questions, and observe the agent's thought process in real-time with reasoning capabilities.
+# 🧐 Agentic RAG with Reasoning 🤖
 
+## 💡 Problem
 
-## Features
+AI systems often provide answers without showing their thought process, leaving users uncertain about reliability and context. Existing RAG systems typically retrieve information but lack transparency in reasoning steps, making it hard to trust complex outputs.
 
-1. Interactive Knowledge Base Management
-- Add URLs dynamically for web content
-- Default knowledge source: MCP vs A2A Protocol article
-- Persistent vector database storage using LanceDB
-- Session state tracking prevents duplicate URL loading
+## 🚀 Solution
 
+This project demonstrates an **agentic RAG system with transparent reasoning**. Using Agno, Gemini 2.5 Flash, and OpenAI embeddings, users can dynamically add web sources, ask questions, and observe the agent's step-by-step thinking in real-time. The system provides source citations, session tracking, and semantic search for accurate, verifiable answers.
 
-2. Transparent Reasoning Process
-- Real-time display of the agent's thinking steps
-- Side-by-side view of reasoning and final answer
-- Clear visibility into the RAG process
+## ⚙️ Features
 
+* **Interactive Knowledge Base Management**:
 
-3. Advanced RAG Capabilities
-- Vector search using OpenAI embeddings for semantic matching
-- Source attribution with citations
+  * Add URLs dynamically for web content
+  * Default knowledge source: MCP vs A2A Protocol article
+  * Persistent vector storage with LanceDB
+  * Session state tracking to avoid duplicate loading
 
+* **Transparent Reasoning Process**:
 
-## Agent Configuration
+  * Real-time display of the agent's thought steps
+  * Side-by-side view of reasoning and final answers
+  * Clear visibility into the RAG pipeline
 
-- Gemini 2.5 Flash for language processing
-- OpenAI embedding model for vector search
-- ReasoningTools for step-by-step analysis
-- Customizable agent instructions
-- Default knowledge source: MCP vs A2A Protocol article
+* **Advanced RAG Capabilities**:
 
-## Prerequisites
+  * Vector search using OpenAI embeddings
+  * Source attribution with citations
 
-You'll need the following API keys:
+## 🧠 Tech Stack
 
-1. Google API Key
+* Agno v2.0 (AI agent framework)
+* Gemini 2.5 Flash (Language processing)
+* OpenAI Embeddings (Vector search)
+* LanceDB (Vector database)
+* Streamlit (Web interface)
+* ReasoningTools (Step-by-step analysis)
 
-- Sign up at [aistudio.google.com](https://aistudio.google.com/apikey)
-- Navigate to API Keys section
-- Create a new API key
+## 🧩 Setup Instructions
 
-2. OpenAI API Key
+### Requirements
 
-- Sign up at [platform.openai.com](https://platform.openai.com/)
-- Navigate to API Keys section
-- Generate a new API key
+* Python 3.8+
+* Google API Key
+* OpenAI API Key
 
-## How to Run
+### Installation
 
-1. **Clone the Repository**:
-    ```bash
-    git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
-    cd rag_tutorials/agentic_rag_with_reasoning
-    ```
+```bash
+git clone https://github.com/tanviiiiir-r/50-days-50-ai-agents.git
+cd 50-days-50-ai-agents/agents/day40_Agentic_RAG_with_Reasoning
+pip install -r requirements.txt
+```
 
-2. **Install the dependencies**:
-    ```bash
-    pip install -r requirements.txt
-    ```
+### Running the App
 
-3. **Run the Application:**
-    ```bash
-    streamlit run rag_reasoning_agent.py
-    ```
+1. Launch the Streamlit app:
 
-4. **Configure API Keys:**
+```bash
+streamlit run rag_reasoning_agent.py
+```
 
-- Enter your Google API key in the first field
-- Enter your OpenAI API key in the second field
-- Both keys are required for the app to function
+2. Enter your API keys in the provided fields.
+3. Use the sidebar to add or manage knowledge sources.
+4. Ask questions using the main input field.
+5. Observe the agent's reasoning in the left panel and answers with citations in the right panel.
 
+## 🧭 Real-World Use Cases
 
-5. **Use the Application:**
+* Educational tools that explain step-by-step reasoning for queries.
+* Transparent AI research assistants for complex topics.
+* Legal or technical document analysis with traceable citations.
+* Corporate knowledge management with dynamic web source integration.
 
-- Default Knowledge Source: The app comes pre-loaded with the MCP vs A2A Protocol article
-- Add Knowledge Sources: Use the sidebar to add URLs to your knowledge base
-- Suggested Prompts: Click the prompt buttons (What is MCP?, MCP vs A2A, Agent Communication) for quick questions
-- Ask Questions: Enter queries in the main input field
-- View Reasoning: Watch the agent's thought process unfold in real-time in the left panel
-- Get Answers: Receive comprehensive responses with source citations in the right panel
+## 📁 Repository Info
 
-## How It Works
-
-The application uses a sophisticated RAG pipeline with Agno v2.0:
-
-### Knowledge Base Setup
-- Documents are loaded from URLs using Agno's Knowledge class
-- Text is automatically chunked and embedded using OpenAI's embedding model 
-- Vectors are stored in LanceDB for efficient retrieval
-- Vector search enables semantic matching for relevant information
-- URLs are tracked in session state to prevent duplicate loading
-
-### Agent Processing
-- User queries trigger the agent's reasoning process
-- ReasoningTools help the agent think step-by-step
-- The agent searches the knowledge base for relevant information
-- Gemini 2.5 Flash generates comprehensive answers with citations
-- Streaming events provide real-time updates on reasoning and content
-
-### UI Flow
-- Enter API keys → Knowledge base loads with default MCP vs A2A article → Use suggested prompts or ask custom questions
-- Reasoning process displayed in left panel, answer generation in right panel
-- Sources cited for transparency and verification
-- All events streamed in real-time for better user experience
+* **Project Name**: Agentic RAG with Reasoning
+* **Day Number**: 26
+* **Series Name**: 50 Days, 50 AI Agents
+* **Author**: [Md Tanvir Rana](https://github.com/tanviiiiir-r)
+* **Tech Stack**: Agno, Gemini 2.5 Flash, OpenAI Embeddings, LanceDB, Streamlit, ReasoningTools
+* **License**: MIT

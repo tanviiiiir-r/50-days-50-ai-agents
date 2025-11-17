@@ -29,9 +29,8 @@ streaming-ai-chatbot/
 
 ```bash
 # Clone the repository
-git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
-cd advanced_llm_apps/chat_with_X_tutorials/chat_with_llms
-
+git clone https://github.com/tanviiiiir-r/50-days-50-ai-agents.git
+cd 50-days-50-ai-agents/agents/day50_chat_with_X_tutorials/chat_with_streaming_ai_chatbot
 # Install dependencies
 npm install
 

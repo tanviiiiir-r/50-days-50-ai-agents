@@ -1,68 +1,95 @@
-# 🎙️ Customer Support Voice Agent
+# Customer Support Voice Agent 🎙️🤖
 
-An OpenAI SDK powered customer support agent application that delivers voice-powered responses to questions about your knowledge base using OpenAI's GPT-4o and TTS capabilities. The system crawls through documentation websites with Firecrawl, processes the content into a searchable knowledge base with Qdrant, and provides both text and voice responses to user queries.
+## Problem 💡
 
-## Features
+Many organizations struggle to provide fast, accurate, and engaging responses to user queries across complex documentation. Traditional chat or FAQ systems often require users to read long pages, leading to slower issue resolution and lower user satisfaction. Static text responses also lack personalization and natural delivery, reducing accessibility.
 
-- Knowledge Base Creation
+This agent exists to convert documentation into an interactive, voice-enabled knowledge base, delivering both text and speech responses to user questions with natural intonation, multiple voice options, and semantic search capabilities.
 
-  - Crawls documentation websites using Firecrawl
-  - Stores and indexes content using Qdrant vector database
-  - Generates embeddings for semantic search capabilities using FastEmbed
-- **AI Agent Team**
-  - **Documentation Processor**: Analyzes documentation content and generates clear, concise responses to user queries
-  - **TTS Agent**: Converts text responses into natural-sounding speech with appropriate pacing and emphasis
-  - **Voice Customization**: Supports multiple OpenAI TTS voices:
-    - alloy, ash, ballad, coral, echo, fable, onyx, nova, sage, shimmer, verse
+## Solution 🚀
 
-- **Interactive Interface**
-  - Clean Streamlit UI with sidebar configuration
-  - Real-time documentation search and response generation
-  - Built-in audio player with download capability
-  - Progress indicators for system initialization and query processing
+The **Customer Support Voice Agent** leverages OpenAI SDK, TTS, and a vector search-based knowledge base to create a voice-first support experience:
 
-## How to Run
+* **Knowledge Base Creation**: Crawls documentation websites using Firecrawl, processes content, generates embeddings via FastEmbed, and stores them in a Qdrant vector database for semantic search.
+* **AI Agent Team**:
 
-1. **Setup Environment**
-   ```bash
-   # Clone the repository
-   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
-   cd awesome-llm-apps/ai_agent_tutorials/ai_voice_agent_openaisdk
-   
-   # Install dependencies
-   pip install -r requirements.txt
-   ```
+  * **Documentation Processor**: Analyzes content and generates clear, concise responses.
+  * **TTS Agent**: Converts text responses into natural-sounding speech with multiple voice options.
+  * **Voice Customization**: Supports voices like alloy, ash, ballad, coral, echo, fable, onyx, nova, sage, shimmer, verse.
+* **Interactive Interface**: Streamlit UI with real-time query handling, sidebar configuration, audio player, and progress indicators.
 
-2. **Configure API Keys**
-   - Get OpenAI API key from [OpenAI Platform](https://platform.openai.com)
-   - Get Qdrant API key and URL from [Qdrant Cloud](https://cloud.qdrant.io)
-   - Get Firecrawl API key for documentation crawling
+Users input a documentation URL, select a voice, and can interactively ask questions, receiving immediate textual and audio responses.
 
-3. **Run the Application**
-   ```bash
-   streamlit run ai_voice_agent_docs.py
-   ```
+## Features ⚙️
 
-4. **Use the Interface**
-   - Enter API credentials in the sidebar
-   - Input the documentation URL you want to learn about
-   - Select your preferred voice from the dropdown
-   - Click "Initialize System" to process the documentation
-   - Ask questions and receive both text and voice responses
+* Automated documentation crawling and knowledge base creation
+* Semantic search and fast content retrieval using embeddings and Qdrant
+* Multiple AI agents coordinating content processing and voice synthesis
+* Expressive text-to-speech output with customizable voices
+* Real-time interactive Streamlit interface
+* Audio playback and download capabilities
+* Support for multiple documentation pages (default: 5 pages)
 
-## Features in Detail
+## Tech Stack 🧠
 
-- **Knowledge Base Creation**
-  - Builds a searchable knowledge base from your documentation
-  - Preserves document structure and metadata
-  - Supports multiple page crawling (limited to 5 pages per default configuration)
+* Python 3.10+
+* Streamlit (UI)
+* OpenAI GPT-4o + TTS
+* Firecrawl (documentation crawling)
+* Qdrant (vector database for semantic search)
+* FastEmbed (embedding generation)
+* Libraries: `requests`, `python-dotenv`, `qdrant-client`
 
-- **Vector Search**
-  - Uses FastEmbed for generating embeddings
-  - Semantic search capabilities for finding relevant content
-  - Efficient document retrieval using Qdrant
+## Setup Instructions 🧩
 
-- **Voice Generation**
-  - High-quality text-to-speech using OpenAI's TTS models
-  - Multiple voice options for customization
-  - Natural speech patterns with proper pacing and emphasis
+### Requirements
+
+* Python 3.10+
+* pip
+* API keys for OpenAI, Qdrant, and Firecrawl
+* Optional virtual environment
+
+### Installation
+
+```bash
+# Clone repository
+git clone https://github.com/tanviiiiir-r/50-days-50-ai-agents.git
+cd 50-days-50-ai-agents/agents/day33_Customer_Support_Voice_Agent
+
+# Optional: create and activate a virtual environment
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+### Run instructions
+
+```bash
+streamlit run ai_voice_agent_docs.py
+```
+
+### Usage
+
+* Enter API keys in the sidebar (OpenAI, Qdrant, Firecrawl)
+* Input the documentation URL
+* Select preferred voice
+* Initialize the system to process documentation
+* Ask questions and receive text and voice responses
+
+## Real-World Use Cases 🧭
+
+* **Customer support teams**: Provide instant, voice-based answers from documentation.
+* **Software documentation portals**: Enhance user engagement with TTS-powered guidance.
+* **Internal knowledge bases**: Enable employees to query complex manuals quickly.
+* **Accessible learning**: Support visually impaired users with high-quality audio answers.
+
+## Repository Info 📁
+
+* **Project Name:** Customer Support Voice Agent
+* **Day Number:** Day 33
+* **Series Name:** 50 Days, 50 AI Agents
+* **Author:** [Md Tanvir Rana](https://github.com/tanviiiiir-r)
+* **Tech Stack:** Python, Streamlit, OpenAI GPT-4o + TTS, Firecrawl, Qdrant, FastEmbed
+* **License:** MIT

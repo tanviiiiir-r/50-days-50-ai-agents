@@ -90,20 +90,13 @@ The system runs all agents **in parallel** using async mode:
 
 ---
 
-## ▶️ Demo
-
-https: //github.com/user-attachments/assets/a0befa3a-f4c3-400d-9790-4b9e37254405
-
----
-
 ## 🧪 How to Run
 
 ### 1️⃣ Clone the Repo
 
 ```bash
 git clone https://github.com/tanviiiiir-r/50-days-50-ai-agents.git
-cd 50-days-50-ai-agents/agents/dayXX_Ai_Services_Agency
-```
+cd 50-days-50-ai-agents/agents/day28_AI_Services_Agency
 
 ### 2️⃣ Install Dependencies
 

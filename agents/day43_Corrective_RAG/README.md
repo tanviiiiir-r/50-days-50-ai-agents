@@ -1,58 +1,82 @@
-# 🔄 Corrective RAG Agent
-A sophisticated Retrieval-Augmented Generation (RAG) system that implements a corrective multi-stage workflow using LangGraph. This system combines document retrieval, relevance grading, query transformation, and web search to provide comprehensive and accurate responses.
+# 🔄 Corrective RAG Agent 🤖
 
-## Features
+## 💡 Problem
 
-- **Smart Document Retrieval**: Uses Qdrant vector store for efficient document retrieval
-- **Document Relevance Grading**: Employs Claude 4.5 sonnet to assess document relevance
-- **Query Transformation**: Improves search results by optimizing queries when needed
-- **Web Search Fallback**: Uses Tavily API for web search when local documents aren't sufficient
-- **Multi-Model Approach**: Combines OpenAI embeddings and Claude 4.5 sonnet for different tasks
-- **Interactive UI**: Built with Streamlit for easy document upload and querying
+Standard RAG systems may provide incomplete or irrelevant answers when document retrieval or query formulation fails. Users require a system that can self-correct, optimize queries, and combine both local and web sources for accurate responses.
 
-## How to Run?
+## 🚀 Solution
 
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
-   cd rag_tutorials/corrective_rag
-   ```
+The **Corrective RAG Agent** uses a multi-stage workflow powered by LangGraph. It combines smart document retrieval, relevance grading, query optimization, and web search fallback to deliver contextually accurate answers. Users can upload documents, ask questions, and observe the corrective reasoning process in real-time.
 
-2. **Install Dependencies**:
-   ```bash
-   pip install -r requirements.txt
-   ```
+## ⚙️ Features
 
-3. **Set Up API Keys**:
-   You'll need to obtain the following API keys:
-   - [OpenAI API key](https://platform.openai.com/api-keys) (for embeddings)
-   - [Anthropic API key](https://console.anthropic.com/settings/keys) (for Claude 4.5 sonnet as LLM)
-   - [Tavily API key](https://app.tavily.com/home) (for web search)
-   - Qdrant Cloud Setup
-      1. Visit [Qdrant Cloud](https://cloud.qdrant.io/)
-      2. Create an account or sign in
-      3. Create a new cluster
-      4. Get your credentials:
-         - Qdrant API Key: Found in API Keys section
-         - Qdrant URL: Your cluster URL (format: `https://xxx-xxx.aws.cloud.qdrant.io`)
+* **Smart Document Retrieval**: Qdrant vector store enables efficient document lookup.
+* **Document Relevance Grading**: Claude 4.5 sonnet evaluates document relevance.
+* **Query Transformation**: Optimizes queries for better search results.
+* **Web Search Fallback**: Tavily API provides additional sources when local documents are insufficient.
+* **Multi-Model Approach**: OpenAI embeddings combined with Claude 4.5 sonnet for different tasks.
+* **Interactive UI**: Streamlit interface for document upload, querying, and real-time visualization.
 
-4. **Run the Application**:
-   ```bash
-   streamlit run corrective_rag.py
-   ```
+## 🧠 Tech Stack
 
-5. **Use the Application**:
-   - Upload documents or provide URLs
-   - Enter your questions in the query box
-   - View the step-by-step Corrective RAG process
-   - Get comprehensive answers
+* LangChain (RAG orchestration)
+* LangGraph (Workflow management)
+* Qdrant (Vector database)
+* Claude 4.5 sonnet (Language model)
+* OpenAI (Embeddings)
+* Tavily (Web search)
+* Streamlit (User interface)
 
-## Tech Stack
+## 🧩 Setup Instructions
 
-- **LangChain**: For RAG orchestration and chains
-- **LangGraph**: For workflow management
-- **Qdrant**: Vector database for document storage
-- **Claude 4.5 sonnet**: Main language model for analysis and generation
-- **OpenAI**: For document embeddings
-- **Tavily**: For web search capabilities
-- **Streamlit**: For the user interface
+### Requirements
+
+* Python 3.8+
+* OpenAI API key
+* Anthropic API key (Claude 4.5 sonnet)
+* Tavily API key
+* Qdrant Cloud account and credentials
+
+### Installation
+
+```bash
+git clone https://github.com/tanviiiiir-r/50-days-50-ai-agents.git
+cd 50-days-50-ai-agents/agents/day43_Corrective_RAG
+pip install -r requirements.txt
+```
+
+### Running the App
+
+```bash
+streamlit run corrective_rag.py
+```
+
+### API Keys Configuration
+
+1. OpenAI API key for embeddings.
+2. Anthropic API key for Claude 4.5 sonnet.
+3. Tavily API key for web search.
+4. Qdrant API key and cluster URL.
+
+### Usage
+
+* Upload documents or input URLs.
+* Enter queries in the input field.
+* Observe step-by-step corrective RAG reasoning.
+* Receive comprehensive answers.
+
+## 🧭 Real-World Use Cases
+
+* Enterprise knowledge retrieval with accurate document grounding.
+* Legal or compliance document analysis.
+* Research assistants with dynamic fallback to web sources.
+* Educational tools providing verified, context-aware answers.
+
+## 📁 Repository Info
+
+* **Project Name**: Corrective RAG Agent
+* **Day Number**: 43
+* **Series Name**: 50 Days, 50 AI Agents
+* **Author**: [Md Tanvir Rana](https://github.com/tanviiiiir-r)
+* **Tech Stack**: LangChain, LangGraph, Qdrant, Claude 4.5 sonnet, OpenAI, Tavily, Streamlit
+* **License**: MIT

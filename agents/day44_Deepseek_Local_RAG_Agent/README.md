@@ -1,84 +1,111 @@
-# 🐋 Deepseek Local RAG Reasoning Agent 
+# 🐋 Deepseek Local RAG Reasoning Agent 🤖
 
-A powerful reasoning agent that combines local Deepseek models with RAG capabilities. Built using Deepseek (via Ollama), Snowflake for embeddings, Qdrant for vector storage, and Agno for agent orchestration, this application offers both simple local chat and advanced RAG-enhanced interactions with comprehensive document processing and web search capabilities.
+## 💡 Problem
 
-## Features
+Most AI chat agents lack integrated reasoning with local models and external document knowledge. Users need a system that combines local model speed with RAG-enhanced reasoning and document grounding for accurate and context-aware responses.
 
-- **Dual Operation Modes**
-  - Local Chat Mode: Direct interaction with Deepseek locally
-  - RAG Mode: Enhanced reasoning with document context and web search integration - llama3.2
+## 🚀 Solution
 
-- **Document Processing** (RAG Mode)
-  - PDF document upload and processing
-  - Web page content extraction
-  - Automatic text chunking and embedding
-  - Vector storage in Qdrant cloud
+The **Deepseek Local RAG Reasoning Agent** combines local Deepseek models with RAG capabilities using Qdrant, Snowflake embeddings, and Agno orchestration. Users can interact locally, upload documents, perform advanced reasoning, and query both local and web sources, with real-time visualization of the agent's thought process.
 
-- **Intelligent Querying** (RAG Mode)
-  - RAG-based document retrieval
-  - Similarity search with threshold filtering
-  - Automatic fallback to web search
-  - Source attribution for answers
+## ⚙️ Features
 
-- **Advanced Capabilities**
-  - Exa AI web search integration
-  - Custom domain filtering for web search
-  - Context-aware response generation
-  - Chat history management
-  - Thinking process visualization
+* **Dual Operation Modes**:
 
-- **Model Specific Features**
-  - Flexible model selection:
-    - Deepseek r1 1.5b (lighter, suitable for most laptops)
-    - Deepseek r1 7b (more capable, requires better hardware)
-  - Snowflake Arctic Embedding model (SOTA) for vector embeddings
-  - Agno Agent framework for orchestration
-  - Streamlit-based interactive interface
+  * Local Chat Mode: Direct local interaction with Deepseek.
+  * RAG Mode: Reasoning enhanced by documents and web search (via llama3.2).
 
-## Prerequisites
+* **Document Processing (RAG Mode)**:
 
-### 1. Ollama Setup
-1. Install [Ollama](https://ollama.ai)
-2. Pull the Deepseek r1 model(s):
+  * PDF upload and content extraction.
+  * Web page scraping and text chunking.
+  * Vector embeddings stored in Qdrant.
+
+* **Intelligent Querying (RAG Mode)**:
+
+  * RAG-based retrieval and similarity search.
+  * Fallback to web search when local data insufficient.
+  * Source attribution included.
+
+* **Advanced Capabilities**:
+
+  * Exa AI web search integration.
+  * Domain-specific filtering.
+  * Context-aware responses.
+  * Chat history management and thinking visualization.
+
+* **Model Specific Features**:
+
+  * Deepseek r1 1.5b (lightweight) or 7b (advanced)
+  * Snowflake Arctic Embedding model
+  * Agno framework for orchestration
+  * Streamlit UI
+
+## 🧠 Tech Stack
+
+* Deepseek (Local LLM)
+* Llama 3.2 (RAG reasoning)
+* Snowflake Arctic Embeddings
+* Qdrant Cloud (Vector database)
+* Agno Agent framework
+* Exa AI (Web search)
+* Streamlit (Interface)
+
+## 🧩 Setup Instructions
+
+### Requirements
+
+* Python 3.8+
+* Ollama installed with Deepseek models
+* Qdrant Cloud credentials
+* Exa AI API key (optional)
+
+### Installation
+
 ```bash
-# For the lighter model
-ollama pull deepseek-r1:1.5b
-
-# For the more capable model (if your hardware supports it)
-ollama pull deepseek-r1:7b
-
-ollama pull snowflake-arctic-embed
-ollama pull llama3.2
-```
-
-### 2. Qdrant Cloud Setup (for RAG Mode)
-1. Visit [Qdrant Cloud](https://cloud.qdrant.io/)
-2. Create an account or sign in
-3. Create a new cluster
-4. Get your credentials:
-   - Qdrant API Key: Found in API Keys section
-   - Qdrant URL: Your cluster URL (format: `https://xxx-xxx.cloud.qdrant.io`)
-
-### 3. Exa AI API Key (Optional)
-1. Visit [Exa AI](https://exa.ai)
-2. Sign up for an account
-3. Generate an API key for web search capabilities
-
-## How to Run
-
-1. Clone the repository:
-```bash
-git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
-cd rag_tutorials/deepseek_local_rag_agent
-```
-
-2. Install dependencies:
-```bash
+git clone https://github.com/tanviiiiir-r/50-days-50-ai-agents.git
+cd 50-days-50-ai-agents/agents/day44_Deepseek_Local_RAG_Agent
 pip install -r requirements.txt
 ```
 
-3. Run the application:
+### Running the App
+
 ```bash
 streamlit run deepseek_rag_agent.py
 ```
 
+### Model Setup
+
+```bash
+# Ollama model pulls
+ollama pull deepseek-r1:1.5b
+ollama pull deepseek-r1:7b
+ollama pull snowflake-arctic-embed
+ollama pull llama3.2
+```
+
+### Qdrant Cloud Setup
+
+* Sign up at [Qdrant Cloud](https://cloud.qdrant.io/)
+* Create cluster and obtain API Key and URL
+
+### Optional Exa AI API Key
+
+* Sign up at [Exa AI](https://exa.ai)
+* Generate API key for web search integration
+
+## 🧭 Real-World Use Cases
+
+* Local AI assistants with reasoning and document grounding.
+* Research and corporate knowledge retrieval from PDFs and web sources.
+* Advanced educational tools providing context-aware responses.
+* Real-time thinking visualization for AI transparency.
+
+## 📁 Repository Info
+
+* **Project Name**: Deepseek Local RAG Reasoning Agent
+* **Day Number**: 44
+* **Series Name**: 50 Days, 50 AI Agents
+* **Author**: [Md Tanvir Rana](https://github.com/tanviiiiir-r)
+* **Tech Stack**: Deepseek, Llama 3.2, Snowflake Arctic Embeddings, Qdrant, Agno, Exa AI, Streamlit
+* **License**: MIT

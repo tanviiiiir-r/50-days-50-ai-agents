@@ -1,93 +1,89 @@
-# 👀 RAG App with Hybrid Search 
+# 👀 RAG App with Hybrid Search 🔍
 
-A powerful document Q&A application that leverages Hybrid Search (RAG) and Claude's advanced language capabilities to provide comprehensive answers. Built with RAGLite for robust document processing and retrieval, and Streamlit for an intuitive chat interface, this system seamlessly combines document-specific knowledge with Claude's general intelligence to deliver accurate and contextual responses.
+## 💡 Problem
 
-## Features
+Traditional document Q&A apps often fail to combine semantic understanding of uploaded documents with general knowledge reasoning. Users need a system that can provide accurate, context-aware answers across both domain-specific and general queries.
 
-- **Hybrid Search Question Answering**
-    - RAG-based answers for document-specific queries
-    - Fallback to Claude for general knowledge questions
+## 🚀 Solution
 
-- **Document Processing**:
-  - PDF document upload and processing
-  - Automatic text chunking and embedding
-  - Hybrid search combining semantic and keyword matching
-  - Reranking for better context selection
+The **Hybrid Search RAG App** uses a multi-model approach combining RAGLite for document retrieval, Claude for text generation, OpenAI for embeddings, and Cohere for reranking. It integrates hybrid search (semantic + keyword matching) to provide accurate, contextual answers while seamlessly handling general knowledge queries.
 
-- **Multi-Model Integration**:
-  - Claude for text generation - tested with Claude 3 Opus 
-  - OpenAI for embeddings - tested with text-embedding-3-large
-  - Cohere for reranking - tested with Cohere 3.5 reranker
+## ⚙️ Features
 
-## Prerequisites
+* **Hybrid Search Question Answering**:
 
-You'll need the following API keys and database setup:
+  * RAG-based answers for document-specific queries
+  * Fallback to Claude for general knowledge questions
 
-1. **Database**: Create a free PostgreSQL database at [Neon](https://neon.tech):
-   - Sign up/Login at Neon
-   - Create a new project
-   - Copy the connection string (looks like: `postgresql://user:pass@ep-xyz.region.aws.neon.tech/dbname`)
+* **Document Processing**:
 
-2. **API Keys**:
-   - [OpenAI API key](https://platform.openai.com/api-keys) for embeddings
-   - [Anthropic API key](https://console.anthropic.com/settings/keys) for Claude
-   - [Cohere API key](https://dashboard.cohere.com/api-keys) for reranking
+  * PDF upload and processing
+  * Automatic text chunking and embedding
+  * Hybrid search combining semantic and keyword matching
+  * Reranking for better context selection
 
-## How to get Started?
+* **Multi-Model Integration**:
 
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
-   cd awesome-llm-apps/rag_tutorials/hybrid_search_rag
-   ```
+  * Claude (Claude 3 Opus) for text generation
+  * OpenAI (text-embedding-3-large) for embeddings
+  * Cohere (3.5 reranker) for document reranking
 
-2. **Install Dependencies**:
-   ```bash
-   pip install -r requirements.txt
-   ```
+## 🧠 Tech Stack
 
-3. **Install spaCy Model**:
-   ```bash
-   pip install https://github.com/explosion/spacy-models/releases/download/xx_sent_ud_sm-3.7.0/xx_sent_ud_sm-3.7.0-py3-none-any.whl
-   ```
+* RAGLite (Document retrieval)
+* Claude (Text generation)
+* OpenAI (Embeddings)
+* Cohere (Reranking)
+* PostgreSQL / MySQL / SQLite (Database)
+* Streamlit (Interface)
 
-4. **Run the Application**:
-   ```bash
-   streamlit run main.py
-   ```
+## 🧩 Setup Instructions
 
-## Usage
+### Requirements
 
-1. Start the application
-2. Enter your API keys in the sidebar:
-   - OpenAI API key
-   - Anthropic API key
-   - Cohere API key
-   - Database URL (optional, defaults to SQLite)
-3. Click "Save Configuration"
-4. Upload PDF documents
-5. Start asking questions!
-   - Document-specific questions will use RAG
-   - General questions will use Claude directly
+* Python 3.8+
+* PostgreSQL (Neon recommended), MySQL, or SQLite
+* OpenAI API Key
+* Anthropic API Key (Claude)
+* Cohere API Key
 
-## Database Options
+### Installation
 
-The application supports multiple database backends:
+```bash
+git clone https://github.com/tanviiiiir-r/50-days-50-ai-agents.git
+cd 50-days-50-ai-agents/agents/day46_Hybrid_Search_RAG
+pip install -r requirements.txt
+pip install https://github.com/explosion/spacy-models/releases/download/xx_sent_ud_sm-3.7.0/xx_sent_ud_sm-3.7.0-py3-none-any.whl
+```
 
-- **PostgreSQL** (Recommended):
-  - Create a free serverless PostgreSQL database at [Neon](https://neon.tech)
-  - Get instant provisioning and scale-to-zero capability
-  - Connection string format: `postgresql://user:pass@ep-xyz.region.aws.neon.tech/dbname`
+### Running the App
 
-- **MySQL**:
-  ```
-  mysql://user:pass@host:port/db
-  ```
-- **SQLite** (Local development):
-  ```
-  sqlite:///path/to/db.sqlite
-  ```
+```bash
+streamlit run main.py
+```
 
-## Contributing
+### Configuration
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+* Enter API keys in the sidebar:
+
+  * OpenAI
+  * Anthropic (Claude)
+  * Cohere
+  * Database URL (optional, defaults to SQLite)
+* Click "Save Configuration"
+
+## 🧭 Real-World Use Cases
+
+* Enterprise knowledge Q&A with both domain-specific and general queries
+* Academic research assistants for PDF and text-based sources
+* Legal or compliance document search with intelligent retrieval
+* Educational chat systems combining hybrid search and AI reasoning
+
+## 📁 Repository Info
+
+* **Project Name**: RAG App with Hybrid Search
+* **Day Number**: 46
+* **Series Name**: 50 Days, 50 AI Agents
+* **Author**: [Md Tanvir Rana](https://github.com/tanviiiiir-r)
+* **Tech Stack**: RAGLite, Claude, OpenAI, Cohere, PostgreSQL/MySQL/SQLite, Streamlit
+* **License**: MIT

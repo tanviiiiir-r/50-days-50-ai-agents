@@ -1,108 +1,114 @@
-# 📑 Notion MCP Agent
+# Notion MCP Agent 📑🤖
 
-A terminal-based Notion Agent for interacting with your Notion pages using natural language through the Notion MCP (Model Context Protocol) server.
+## Problem 💡
 
-## Features
+Interacting with Notion pages programmatically often requires coding knowledge and multiple API calls. Users struggle to perform updates, retrieve information, or manage complex page structures efficiently. There’s also a need for natural language interaction and context-aware conversation with Notion content.
 
-- Interact with Notion pages via a command-line interface
-- Perform update, insert, retrieve operations on your Notion pages
-- Create and edit blocks, lists, tables, and other Notion structures
-- Add comments to blocks
-- Search for specific information
-- Remembers conversation context for multi-turn interactions
-- Session management for persistent conversations
+## Solution 🚀
 
-## Prerequisites
+**Notion MCP Agent** allows users to interact with Notion pages using natural language commands in a terminal interface. It connects to the **Notion MCP server** and uses OpenAI for understanding and executing commands. Users can create, update, retrieve, and manage content efficiently while maintaining multi-turn conversational context.
 
-- Python 3.10+
-- A Notion account with admin permissions
-- A Notion Integration token
-- An OpenAI API key
+## Features ⚙️
 
-## Installation
+* Natural language terminal interface for Notion
+* Update, insert, and retrieve page content
+* Create and edit blocks, lists, tables, and other structures
+* Add comments to blocks
+* Search for specific information
+* Maintains conversation context for multi-turn interactions
+* Session management for persistent conversations
 
-1. Clone the repository
-2. Install the required Python packages:
+## Tech Stack 🧠
+
+* Python 3.10+
+* OpenAI API (LLM for natural language commands)
+* Notion API via Notion MCP server
+* Terminal CLI interface
+
+## Setup Instructions 🧩
+
+### Prerequisites
+
+* Python 3.10+
+* Notion account with admin permissions
+* Notion Integration Token
+* OpenAI API Key
+
+### Installation
 
 ```bash
+# Clone repository
+git clone https://github.com/tanviiiiir-r/50-days-50-ai-agents.git
+cd 50-days-50-ai-agents/agents/day37_Notion_MCP_Agent
+
+# Install dependencies
 pip install -r requirements.txt
 ```
 
-3. Install the Notion MCP server (will be done automatically when you run the app)
+### Notion Integration Setup
 
-## Setting Up Notion Integration
+1. Create a Notion Integration: [Notion Integrations](https://www.notion.so/my-integrations)
 
-### Creating a Notion Integration
+   * Enable Read & Write content
+   * Copy your Internal Integration Token
 
-1. Go to [Notion Integrations](https://www.notion.so/my-integrations)
-2. Click "New integration"
-3. Name your integration (e.g., "Notion Assistant")
-4. Select the capabilities needed (Read & Write content)
-5. Submit and copy your "Internal Integration Token"
+2. Share your Notion page with the integration:
 
-### Sharing Your Notion Page with the Integration
+   * Use the three dots (⋮) → Add connections → Select your integration
+   * OR use the Share button → search for integration → Invite
 
-1. Open your Notion page
-2. Click the three dots (⋮) in the top-right corner of the page
-3. Select "Add connections" from the dropdown menu
-4. Search for your integration name in the search box
-5. Click on your integration to add it to the page
-6. Confirm by clicking "Confirm" in the dialog that appears
+3. Find your Notion Page ID:
 
-Alternatively, you can also share via the "Share" button:
-1. Click "Share" in the top right
-2. In the sharing dialog, search for your integration name (preceded by "@")
-3. Click on your integration to add it
-4. Click "Invite" to grant it access to your page
+   * Open your Notion page in a browser
+   * Copy the URL and extract the part after the last dash
 
-Both methods will grant your integration full access to the page and its content.
+### Configuration
 
-### Finding Your Notion Page ID
-
-1. Open your Notion page in a browser
-2. Copy the URL, which looks like:
-   `https://www.notion.so/workspace/Your-Page-1f5b8a8ba283...`
-3. The ID is the part after the last dash and before any query parameters
-   Example: `1f5b8a8bad058a7e39a6`
-
-## Configuration
-
-You can configure the agent using environment variables:
-
-- `NOTION_API_KEY`: Your Notion Integration token
-- `OPENAI_API_KEY`: Your OpenAI API key
-- `NOTION_PAGE_ID`: The ID of your Notion page
-
-Alternatively, you can set these values directly in the script.
-
-## Usage
-
-Run the agent from the command line:
+Set environment variables:
 
 ```bash
-python notion_mcp_agent.py
+export NOTION_API_KEY='your-notion-api-key'
+export OPENAI_API_KEY='your-openai-api-key'
+export NOTION_PAGE_ID='your-page-id'
 ```
 
-When you start the agent, it will prompt you to enter your Notion page ID. You can:
-1. Enter your page ID at the prompt
-2. Press Enter without typing anything to use the default page ID (if set)
-3. Provide the page ID directly as a command-line argument (bypassing the prompt):
+## Run Instructions
 
 ```bash
+# Start agent
+python notion_mcp_agent.py
+
+# Or provide page ID directly
 python notion_mcp_agent.py your-page-id-here
 ```
 
 ### Conversation Flow
 
-Each time you start the agent, it creates a unique user ID and session ID to maintain conversation context. This allows the agent to remember previous interactions and continue coherent conversations even after you close and restart the application.
-
-You can exit the conversation at any time by typing `exit`, `quit`, `bye`, or `goodbye`.
+* Creates unique user ID and session ID per run
+* Maintains multi-turn conversation context
+* Exit anytime by typing: `exit`, `quit`, `bye`, `goodbye`
 
 ## Example Queries
 
-- "What's on my Notion page?"
-- "Add a new paragraph saying 'Meeting notes for today'"
-- "Create a bullet list with three items: Apple, Banana, Orange"
-- "Add a comment to the first paragraph saying 'This looks good!'"
-- "Search for any mentions of meetings"
-- "Summarize our conversation so far"
+* "What's on my Notion page?"
+* "Add a new paragraph saying 'Meeting notes for today'"
+* "Create a bullet list with three items: Apple, Banana, Orange"
+* "Add a comment to the first paragraph saying 'This looks good!'"
+* "Search for any mentions of meetings"
+* "Summarize our conversation so far"
+
+## Real-World Use Cases 🧭
+
+* Quickly update Notion pages without navigating the UI
+* Keep meeting notes and summaries organized via natural language
+* Manage to-do lists, tables, and content blocks efficiently
+* Automate content retrieval and reporting
+
+## Repository Info 📁
+
+* **Project Name:** Notion MCP Agent
+* **Day Number:** Day 36
+* **Series Name:** 50 Days, 50 AI Agents
+* **Author:** [Md Tanvir Rana](https://github.com/tanviiiiir-r)
+* **Tech Stack:** Python, OpenAI API, Notion MCP, Terminal CLI
+* **License:** MIT

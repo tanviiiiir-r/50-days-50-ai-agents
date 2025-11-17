@@ -1,69 +1,89 @@
-# Multimodal AI Design Agent Team
+# Multimodal AI Design Agent Team 🎨🤖
 
-A Streamlit application that provides comprehensive design analysis using a team of specialized AI agents powered by Google's Gemini model. 
+## Problem 💡
 
-This application leverages multiple specialized AI agents to provide comprehensive analysis of UI/UX designs of your product and your competitors, combining visual understanding, user experience evaluation, and market research insights.
+Designers and product teams often struggle to objectively evaluate UI/UX quality and compare their designs with competitors. Manual analysis is time-consuming, subjective, and often misses subtle visual or interaction issues. Market positioning insights are usually separate from design evaluation, making strategic decisions slower and less informed.
 
-## Features
+This agent team exists to provide a comprehensive, automated evaluation of product designs, combining visual analysis, UX assessment, and market intelligence — all powered by specialized AI agents using Google's Gemini model.
 
-- **Specialized Legal AI Agent Team**
+## Solution 🚀
 
-   - 🎨 **Visual Design Agent**: Evaluates design elements, patterns, color schemes, typography, and visual hierarchy
-   - 🔄 **UX Analysis Agent**: Assesses user flows, interaction patterns, usability, and accessibility
-   - 📊 **Market Analysis Agent**: Provides market insights, competitor analysis, and positioning recommendations
-   
-- **Multiple Analysis Types**: Choose from Visual Design, UX, and Market Analysis
-- **Comparative Analysis**: Upload competitor designs for comparative insights
-- **Customizable Focus Areas**: Select specific aspects for detailed analysis
-- **Context-Aware**: Provide additional context for more relevant insights
-- **Real-time Processing**: Get instant analysis with progress indicators
-- **Structured Output**: Receive well-organized, actionable insights
+The **Multimodal AI Design Agent Team** is a Streamlit application that runs multiple specialized AI agents in parallel:
 
-## How to Run
+* **Visual Design Agent**: Analyzes color schemes, typography, visual hierarchy, and design patterns.
+* **UX Analysis Agent**: Evaluates usability, interaction patterns, user flows, and accessibility.
+* **Market Analysis Agent**: Provides competitor insights, market positioning, and strategic recommendations.
 
-1. **Setup Environment**
-   ```bash
-   # Clone the repository
-   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
-   cd advanced_ai_agents/multi_agent_apps/agent_teams/multimodal_design_agent_team
+Users can upload their designs and optionally competitor designs, select focus areas, and receive structured, actionable insights instantly. The system combines visual understanding with market research for a complete design evaluation.
 
-   # Create and activate virtual environment (optional)
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
+## Features ⚙️
 
-   # Install dependencies
-   pip install -r requirements.txt
-   ```
+* Specialized AI agents for visual, UX, and market analysis
+* Multiple analysis types: Visual Design, UX, Market Analysis
+* Comparative analysis with competitor uploads
+* Customizable focus areas for detailed evaluation
+* Context-aware insights with user-provided descriptions
+* Real-time processing with progress indicators
+* Structured, actionable output for decision making
 
-2. **Get API Key**
-   - Visit [Google AI Studio](https://aistudio.google.com/apikey)
-   - Generate an API key
+## Tech Stack 🧠
 
-3. **Run the Application**
-   ```bash
-   streamlit run design_agent_team.py
-   ```
+* **Frontend**: Streamlit
+* **AI Model**: Google Gemini 2.0
+* **Image Processing**: Pillow
+* **Market Research**: DuckDuckGo Search API
+* **Framework**: Phidata for agent orchestration
 
-4. **Use the Application**
-   - Enter your Gemini API key in the sidebar
-   - Upload design files (supported formats: JPG, JPEG, PNG)
-   - Select analysis types and focus areas
-   - Add context if needed
-   - Click "Run Analysis" to get insights
+## Setup Instructions 🧩
 
+### Requirements
 
-## Technical Stack
+* Python 3.10+
+* pip
+* Gemini API key from [Google AI Studio](https://aistudio.google.com/apikey)
+* Optional: virtual environment
 
-- **Frontend**: Streamlit
-- **AI Model**: Google Gemini 2.0
-- **Image Processing**: Pillow
-- **Market Research**: DuckDuckGo Search API
-- **Framework**: Phidata for agent orchestration
+### Installation
 
-## Tips for Best Results
+```bash
+# Clone repository
+git clone https://github.com/tanviiiiir-r/50-days-50-ai-agents.git
+cd 50-days-50-ai-agents/agents/day31_Multimodal_Design_Agent_Team
 
-- Upload clear, high-resolution images
-- Include multiple views/screens for better context
-- Add competitor designs for comparative analysis
-- Provide specific context about your target audience
+# Optional: create and activate virtual environment
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
 
+# Install dependencies
+pip install -r requirements.txt
+```
+
+### Run instructions
+
+```bash
+streamlit run design_agent_team.py
+```
+
+### Usage
+
+* Enter your Gemini API key in the sidebar
+* Upload your design files (JPG, JPEG, PNG)
+* Select analysis types and focus areas
+* Provide context if desired
+* Click **Run Analysis** to get structured insights
+
+## Real-World Use Cases 🧭
+
+* **Product teams**: Rapidly evaluate new UI/UX designs and identify improvements
+* **Design agencies**: Provide clients with data-driven design recommendations
+* **Startups**: Compare product design against competitors and optimize market positioning
+* **UX researchers**: Automate usability and accessibility assessment for prototypes
+
+## Repository Info 📁
+
+* **Project Name:** Multimodal AI Design Agent Team
+* **Day Number:** Day 31
+* **Series Name:** 50 Days, 50 AI Agents
+* **Author:** [Md Tanvir Rana](https://github.com/tanviiiiir-r)
+* **Tech Stack:** Python, Streamlit, Google Gemini 2.0, Pillow, DuckDuckGo API, Phidata
+* **License:** MIT

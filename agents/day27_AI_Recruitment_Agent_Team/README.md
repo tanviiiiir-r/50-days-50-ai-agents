@@ -87,8 +87,7 @@ Clone the official repository:
 
 ```bash
 git clone https://github.com/tanviiiiir-r/50-days-50-ai-agents.git
-cd 50-days-50-ai-agents/agents/dayXX_ai_recruitment_agent
-```
+cd 50-days-50-ai-agents/agents/day27_AI_Recruitment_Agent_Team
 
 Install dependencies:
 
